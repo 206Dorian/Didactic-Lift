@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-
+const exerciseSchema = require('./Exercise.js')
 const workoutSchema = new Schema(
   {
     name: {
@@ -8,7 +8,7 @@ const workoutSchema = new Schema(
       unique: true,
       trim: true
     },
-   
+   exercise:[exerciseSchema],
    user: [
       {
         type: Schema.Types.ObjectId,

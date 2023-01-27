@@ -2,19 +2,18 @@ const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema(
   {
-    name: {
+    userName: {
       type: String,
       required: true,
       trim: true
     },
-    studentScore: {
-      type: Number
-    },
-    officeHours: {
+    email: {
       type: String,
       required: true
     },
-    officeLocation: {
+
+    //update the password 
+    password: {
       type: String,
       required: true
     },

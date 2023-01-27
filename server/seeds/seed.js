@@ -1,6 +1,6 @@
 const db = require('../config/connection');
 const { School, Class, Professor } = require('../models');
-
+// update these
 const schoolData = require('./schoolData.json');
 const classData = require('./classData.json');
 const professorData = require('./professorData.json');
