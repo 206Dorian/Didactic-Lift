@@ -1,5 +1,5 @@
-const School = require('./Exercise');
-const Class = require('./Workouts');
-const Professor = require('./User');
+const Exercise = require('./Exercise');
+const Workouts = require('./Workouts');
+const User = require('./User');
 
-module.exports = { School, Class, Professor };
+module.exports = { Exercise, User, Workouts };
