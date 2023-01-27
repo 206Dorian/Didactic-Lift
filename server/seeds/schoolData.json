@@ -1,0 +1,17 @@
+[
+  {
+    "name": "UseEffect University",
+    "location": "Downtown",
+    "studentCount": 6000
+  },
+  {
+    "name": "Component College",
+    "location": "Art District",
+    "studentCount": 8000
+  },
+  {
+    "name": "JSX Technical School",
+    "location": "React Park",
+    "studentCount": 5000
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Alberto Harrison",
+    "studentScore": 7.6,
+    "officeHours": "10:00 AM",
+    "officeLocation": "HH3"
+  },
+  {
+    "name": "Peyton Olson",
+    "studentScore": 9.0,
+    "officeHours": "10:30 AM",
+    "officeLocation": "JH2"
+  },
+  {
+    "name": "Virgil Parker",
+    "studentScore": 8.1,
+    "officeHours": "1:00 PM",
+    "officeLocation": "LIB1"
+  },
+  {
+    "name": "Rebecca Watts",
+    "studentScore": 8.8,
+    "officeHours": "4:00 PM",
+    "officeLocation": "LIB2"
+  },
+  {
+    "name": "Colleen Moore",
+    "studentScore": 7.8,
+    "officeHours": "4:30 PM",
+    "officeLocation": "KS3"
+  }
+]

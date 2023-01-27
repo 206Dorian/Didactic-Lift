@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Foundations of Data Science",
+    "building": "CHEM",
+    "creditHours": 3
+  },
+  {
+    "name": "Introduction to Computational Thinking",
+    "building": "LS",
+    "creditHours": 3
+  },
+  {
+    "name": "C for Programmers",
+    "building": "SCI",
+    "creditHours": 4
+  },
+  {
+    "name": "C++ for Programmers",
+    "building": "SCI",
+    "creditHours": 4
+  },
+  {
+    "name": "Discrete Mathematics",
+    "building": "SCI",
+    "creditHours": 3
+  },
+  {
+    "name": "Computer Architecture and Engineering",
+    "building": "SCI",
+    "creditHours": 3
+  },
+  {
+    "name": "User Interface Design",
+    "building": "HH",
+    "creditHours": 4
+  },
+  {
+    "name": "Computer Security",
+    "building": "JH",
+    "creditHours": 3
+  },
+  {
+    "name": "Internet Architecture and Protocols",
+    "building": "JH",
+    "creditHours": 2
+  },
+  {
+    "name": "Algorithms for Computational Biology",
+    "building": "LS",
+    "creditHours": 3
+  }
+]
