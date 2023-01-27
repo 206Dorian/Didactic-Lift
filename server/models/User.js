@@ -1,30 +1,32 @@
 const { Schema, model } = require('mongoose');
 
-const schoolSchema = new Schema(
+const userSchema = new Schema(
   {
     name: {
       type: String,
       required: true,
-      unique: true,
       trim: true
     },
-    location: {
+    studentScore: {
+      type: Number
+    },
+    officeHours: {
       type: String,
       required: true
     },
-    studentCount: {
-      type: Number,
+    officeLocation: {
+      type: String,
       required: true
     },
-    classes: [
+    workouts: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Class'
+        ref: 'exercise'
       }
     ]
   }
 );
 
-const School = model('School', schoolSchema);
+const User = model('User', userSchema);
 
-module.exports = School;
+module.exports = User;
