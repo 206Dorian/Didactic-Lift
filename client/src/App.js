@@ -1,23 +1,35 @@
+import Header from './componenets/Header';
+import Footer from './componenets/Footer';
+import Login from './componenets/pages/Login';
+import Navigation from './componenets/pages/Navigation';
+import Profile from './componenets/pages/Profile';
+import Workout from './componenets/pages/Workout';
+
+
+
+
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-     
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Header />
+
+      <Navigation />
+
+      <Login />
+
+      <Header />
+
+      <Profile />
+
+      <Workout />
+
+      <Footer />
+
+
     </div>
   );
 }
