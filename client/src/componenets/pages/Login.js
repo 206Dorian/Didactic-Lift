@@ -5,19 +5,19 @@ const Login = () => {
     <>
 
 
-<div className='login-page'>
-  <div className='container'>
-    <div className='row'>
-      <div className='col-2'>
+<container className='login-page'>
+  <container className='container'>
+    <container className='row'>
+      <container className='col-2'>
         
-      </div>
-      <div className='col-2'>
-        <div className='form-container'>
-          <div className='form-btn'>
+      </container>
+      <container className='col-2'>
+        <container className='form-container'>
+          <container className='form-btn'>
             <span onclick='login()'>Login or </span>
             <span onclick='register()'>Register</span>
             <hr id='indicator' />
-          </div>
+          </container>
           <form id='loginForm'>
             <input type='Email' placeholder='Email' id='email-login' />
             <input type='Password' placeholder='Password' id='password-login' />
@@ -47,11 +47,11 @@ const Login = () => {
             />
             <button type='submit' class='btn'>Register</button>
           </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+        </container>
+      </container>
+    </container>
+  </container>
+</container>
 
 
 <script src='./js/login.js'></script>
