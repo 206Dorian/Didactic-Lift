@@ -15,20 +15,31 @@ function App() {
   return (
     <div className="App">
 
+      <br></br>
+
       <Header />
+
+      <br></br>
 
       <Navigation />
 
+      <br></br>
+
       <Login />
 
-      <Header />
+      <br></br>
 
       <Profile />
 
+      <br></br>
+
       <Workout />
+
+      <br></br>
 
       <Footer />
 
+      <br></br>
 
     </div>
   );
