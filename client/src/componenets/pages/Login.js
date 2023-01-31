@@ -15,11 +15,7 @@ const Login = () => {
             </container>
             <container className='col-2'>
               <container className='form-container'>
-                <container className='form-btn'>
-                  <btn onclick='login()'>Login or </btn>
-                  <btn onclick='register()'>Register</btn>
-                  <hr id='indicator' />
-                </container>
+               
                 <container id='loginForm'>
                   <input type='Email' placeholder='Email' id='email-login' />
                   <input type='Password' placeholder='Password' id='password-login' />
