@@ -4,7 +4,7 @@ import Login from './componenets/pages/Login';
 import Profile from './componenets/pages/Profile';
 import Workout from './componenets/pages/Workout';
 import { css } from '@emotion/react';
-
+import Home from './componenets/pages/Home';
 
 
 
@@ -15,29 +15,14 @@ function App() {
   return (
     <container className="App">
 
-      <br></br>
-
       <Header />
 
-      <br></br>
+      <Home />
 
-      <Login />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      
-      <Profile />
-      <br></br>
-      
-
-      <Workout />
-
-      <br></br>
+      {/* <Profile />
+      <br></br> */}
 
       <Footer />
-
-      <br></br>
 
     </container>
   );
