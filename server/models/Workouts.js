@@ -1,6 +1,5 @@
-const { Schema, model } = require('mongoose');
-const exerciseSchema = require('./Exercise.js')
-const workoutSchema = new Schema(
+const mongoose = require('mongoose');
+const workoutSchema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -8,16 +7,13 @@ const workoutSchema = new Schema(
       unique: true,
       trim: true
     },
-   exercise:[exerciseSchema],
-   user: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'User'
-      }
-    ]
+  },
+  {
+    toJSON:{
+      getters:true,
+      virtuals: true,
+  }
   }
 );
 
-const Workout = model('Workout', workoutSchema);
-
-module.exports = Workout;
+module.exports = workoutSchema;
