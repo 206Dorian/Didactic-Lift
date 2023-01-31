@@ -1,5 +1,28 @@
-/* Global Styling */
 
+body {
+    
+    color: rgb(17, 18, 18);
+    background-image: linear-gradient( rgb(19, 20, 20),  rgb(84, 88, 89), rgb(116, 119, 119),
+        rgb(16, 16, 16));
+  }
+
+div {
+    display: flex-box;
+    flex-direction: row-reverse;
+    padding: 30px;
+    background-color: rgb(72, 74, 75);
+    box-sizing: border-box 20px;
+    border: 10px solid rgb(17, 66, 109);
+    
+    font-size: 35px;
+    text-align: center;
+    border-radius: 50% 50% 50% 50% / 25% 25% 25% 25% ;
+  
+    margin: auto;
+    width: 75%;
+    padding: 20px;
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +48,7 @@
   }
   
   p {
-    color: #404040;
+    color: #0e0d0d;
   }
   
   /* NavBar Border Box On Hover */
@@ -53,9 +76,9 @@
   
   /* Login Page Styling */
   
-  .btn {
+  btn {
     display: inline-block;
-    background: blue;
+    background: rgb(23, 23, 92);
     color: #ffffff;
     padding: 8px 30px;
     margin: 30px 0;
@@ -63,14 +86,13 @@
     transition: background 0.5s;
   }
   
-  .btn:active {
+  btn:active {
     cursor: wait;
   }
   
-  .btn:hover,
-  .btn:focus,
-  .btn:active {
-    background: blue;
+  btn:hover,
+  btn:active {
+    background: rgb(89, 176, 213);
   }
   
   .col-2 {
@@ -130,12 +152,12 @@
     padding: 0 10px;
     color: #808080;
     cursor: pointer;
-    width: 100px;
+    width: 200px;
     display: inline-block;
   }
   
   form input {
-    width: 100%;
+    width: 200%;
     height: 30px;
     margin: 10px 0;
     padding: 0 10px;
@@ -189,37 +211,11 @@
     text-align: right;
   }
   
-  nav ul {
-    display: inline-block;
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-  }
+ 
   
   /* Footer Styling */
   
-  .app-logo {
-    margin-top: 20px;
-  }
   
-  .app-logo img {
-    display: block;
-    margin-bottom: 20px;
-    width: 140px;
-  }
-  
-  .copyright {
-    text-align: center;
-  }
   
   .footer {
     background: #ffffff;
@@ -267,19 +263,8 @@
     margin-bottom: 20px;
   }
   
-  /* Small Container */
-  
-  .small-container {
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 90px;
-  }
-  
-  /* Products Styling */
-  
-  .page-btn {
+
+  btn {
     padding-top: 50px;
     margin: 0 auto 80px;
   }
@@ -288,7 +273,7 @@
     display: inline-block;
     border: 1px solid blue;
     margin-left: 10px;
-    width: 40px;
+    width: 60px;
     height: 40px;
     text-align: center;
     line-height: 40px;
@@ -296,7 +281,7 @@
   }
   
   .page-btn span:hover {
-    background: blue;
+    background: rgb(226, 132, 223);
     color: #fff;
   }
   
@@ -321,71 +306,6 @@
     padding-right: 25px;
   }
   
-  /* Product Details Styling */
-  
-  input:focus {
-    outline: none;
-  }
-  
-  .relative-positioning {
-    position: relative;
-    top: -30px;
-  }
-  
-  .single-product {
-    margin-top: 80px;
-  }
-  
-  .single-product .col-2 {
-    padding: 20px;
-  }
-  
-  .single-product .col-2 img {
-    padding: 0;
-  }
-  
-  .single-product .fa {
-    color: blue;
-    margin-left: 10px;
-  }
-  
-  .single-product h4 {
-    margin: 20px 0;
-    font-size: 22px;
-    font-weight: bold;
-  }
-  
-  .single-product input {
-    width: 50px;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 20px;
-    margin-right: 10px;
-    border: 1px solid blue;
-  }
-  
-  .single-product select {
-    display: block;
-    padding: 10px;
-    margin-top: 20px;
-  }
-  
-  .small-container-3 {
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  
-  .small-img-col {
-    flex-basis: 24%;
-    cursor: pointer;
-  }
-  
-  .small-img-row {
-    display: flex;
-    justify-content: space-between;
-  }
   
   /* Home Page Styling */
   

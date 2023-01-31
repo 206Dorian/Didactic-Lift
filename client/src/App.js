@@ -1,7 +1,6 @@
 import Header from './componenets/Header';
 import Footer from './componenets/Footer';
 import Login from './componenets/pages/Login';
-import Navigation from './componenets/pages/Navigation';
 import Profile from './componenets/pages/Profile';
 import Workout from './componenets/pages/Workout';
 import { css } from '@emotion/react';
@@ -14,21 +13,27 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <container className="App">
 
       <br></br>
 
       <Header />
 
-      
       <br></br>
 
       <Login />
-
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <br></br>
 
+      
       <Profile />
-
+      <br></br>
       <br></br>
 
       <Workout />
@@ -39,7 +44,7 @@ function App() {
 
       <br></br>
 
-    </div>
+    </container>
   );
 }
 
