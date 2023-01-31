@@ -19,10 +19,7 @@ function App() {
 
       <Header />
 
-      <br></br>
-
-      <Navigation />
-
+      
       <br></br>
 
       <Login />
