@@ -48,6 +48,23 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
+    addWorkout: async (parent, { Exercise }, context) => {
+      if (context.user) {
+        const workout = await Workout.create(
+        [Exercise]
+        );
+
+        await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $addToSet: { workouts: workout._id } }
+        );
+        return workout;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    }
+
+
+
   }
 };
 
