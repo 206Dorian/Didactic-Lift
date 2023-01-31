@@ -1,9 +1,8 @@
 import React from 'react'
-
+import { css } from '@emotion/react'
 const Login = () => {
   return (
     <>
-
 
 
 <div className='login-page'>
@@ -53,8 +52,11 @@ const Login = () => {
     </div>
   </div>
 </div>
-{ <script src='./js/login.js'></script>},
-{<script src='./js/toggle-form.js'></script>}
+
+
+<script src='./js/login.js'></script>
+<script src='./js/toggle-form.js'></script>
+
 
 
     </>

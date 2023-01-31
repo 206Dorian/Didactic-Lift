@@ -2,8 +2,10 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>  
-      <strong> <h1>Header</h1> </strong></div>
+    <div>
+      <h1> DIDACTIC LIFT </h1>
+
+    </div>
   )
 }
 
