@@ -15,22 +15,14 @@ function App() {
   return (
     <container className="App">
 
-      <br></br>
-
       <Header />
 
-      <br></br>
-
       <Home />
-
-      <br></br>
 
       {/* <Profile />
       <br></br> */}
 
       <Footer />
-
-      <br></br>
 
     </container>
   );
