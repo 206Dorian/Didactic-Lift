@@ -17,6 +17,7 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
     "apollo-server-express": "^2.25.3",
     "bcrypt": "^5.1.0",
     "dotenv": "^16.0.3",

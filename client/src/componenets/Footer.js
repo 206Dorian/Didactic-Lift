@@ -3,9 +3,13 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-<h2>Thanks for stopping by!</h2>
+
+<h1>Thanks for stopping by!
+  Send us some love by tipping us here $$$
+</h1>
+
      <br></br>
-     <strong>My Links</strong>
+     
     
       
       
