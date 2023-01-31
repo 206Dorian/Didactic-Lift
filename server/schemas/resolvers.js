@@ -1,4 +1,4 @@
-const { Exercise, User, Workouts } = require('../models');
+const { Exercise, User, workoutSchema } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
 
@@ -21,9 +21,9 @@ const resolvers = {
       return await User.find({});
     },
 
-    Workouts: async () => {
-      return await Workouts.find({});
-    },
+    // Workouts: async () => {
+    //   return await workoutSchema.find({});
+    // },
   },
   Mutation: {
     addUser: async (parent, args) => {
@@ -50,7 +50,7 @@ const resolvers = {
     },
     addWorkout: async (parent, { Exercise }, context) => {
       if (context.user) {
-        const workout = await Workout.create(
+        const workout = await workoutSchema.create(
         [Exercise]
         );
 
