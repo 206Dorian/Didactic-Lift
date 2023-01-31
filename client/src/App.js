@@ -26,15 +26,10 @@ function App() {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-
       
       <Profile />
       <br></br>
-      <br></br>
+      
 
       <Workout />
 

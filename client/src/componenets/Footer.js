@@ -4,15 +4,15 @@ const Footer = () => {
   return (
     <>
 
-<h1>Thanks for stopping by!
-  Send us some love by tipping us here $$$
-</h1>
-
-     <br></br>
-     
-    
-      
-      
+      <h2>  We hope this "Lifted" your spirits
+        <br></br>
+        Send us some love by
+        <br></br>
+        tipping us here
+        <br></br>
+        <btn> $$$ </btn>
+        {/* ANCHOR THIS AND ADD STRIPE LINK */}
+      </h2>
 
     </>
   )
