@@ -46,6 +46,7 @@ const handleChange = (event) => {
 //   else if(response.statusCode != 200) return console.error('Error:', response.statusCode, body.toString('utf8'));
 //   else console.log(body)
 // });
+
 //THIS IS WHAT THE API RECOMMENDS FOR JAVASCRIPT
 // var muscle = 'biceps'
 // $.ajax({

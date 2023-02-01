@@ -5,7 +5,7 @@ const Home = () => {
     <div>
 
 <container className='form-btn'>
-                  <btn onclick='login()'>Login or </btn>
+                  <btn onclick='login()'>Login </btn>
                   <btn onclick='register()'>Register</btn>
                   <hr id='indicator' />
                 </container>
