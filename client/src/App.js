@@ -10,6 +10,7 @@ import Home from './componenets/pages/Home';
 
 
 import './App.css';
+import { APICall } from './componenets/APIcall';
 
 function App() {
   return (

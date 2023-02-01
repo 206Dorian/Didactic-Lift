@@ -1,5 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
+const workoutSchema = require('./Workouts')
 const userSchema = new Schema(
   {
     username: {
@@ -17,18 +18,15 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    workouts: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'exercise'
-      },
-      {
-        toJSON: {
-          virtuals: true,
-        },
-      }
-    ]
+    workouts: [workoutSchema],
+  },
+  {
+    toJSON: {
+      virtuals: true,
+    },
   }
+
+
 );
 // hash user password
 userSchema.pre('save', async function (next) {

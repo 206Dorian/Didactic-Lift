@@ -7,7 +7,12 @@ type User {
   username: String
   email: String
   password: String
-  workouts: [Exercise]!
+  workouts: [Workout] 
+}
+
+type Workout {
+  name: String
+  exercises: [Exercise]
 }
 
 type Exercise {
@@ -19,9 +24,7 @@ type Exercise {
   difficulty: String
   instructions: String
 }
-type Workout{
-  name: String
-}
+
 
 type Auth {
   token: ID!
@@ -40,8 +43,8 @@ type Auth {
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addWorkout(workoutText: String!): Workout
-    removeWorkout(workoutId: ID!): Workout
+    addWorkout(name: String, exercises:String): User
+    removeWorkout(workoutId: ID!): User
   }
 
 `;
