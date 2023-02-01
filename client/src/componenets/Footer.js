@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
 
-      <h3>  We hope this "Lifted" your spirits
+      <h3>  We hope this *Lifted* your spirits
         <br></br>
         Send us some love by
         tipping us here
