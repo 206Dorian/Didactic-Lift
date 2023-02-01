@@ -19,8 +19,11 @@ function App() {
 
       <Home />
 
-      {/* <Profile />
-      <br></br> */}
+
+      {/* <Login /> */}
+
+      <Profile />
+      <br></br>
 
       <Footer />
 
