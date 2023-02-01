@@ -15,7 +15,7 @@ div {
   display: flex-box;
   flex-direction: row-reverse;
   padding: 50px;
-  background-color: rgb(82, 94, 97);
+  background-color: rgb(74, 97, 108);
   box-sizing: border-box 30px;
   border: 10px solid rgb(10, 57, 98);
   font-size: 40px;
@@ -25,15 +25,32 @@ div {
   width: 60%;
   height: 60%;
   padding: 50px;
-  /* position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -50%) */
+
 }
 
 
-p {
+/* p {
   color: #f5f1f1;
+} */
+
+button {
+  display: inline-block;
+  background: rgb(2, 2, 11);
+  color: #ffffff;
+  padding: 80px 80px;
+  margin: 20px 50px;
+  border-radius: 30px;
+  transition: background 0.5s;
+ 
+}
+
+button:active {
+  cursor: wait;
+}
+
+button:hover,
+btn:active {
+  background: rgb(89, 176, 213);
 }
 
 
@@ -56,8 +73,6 @@ btn:hover,
 btn:active {
   background: rgb(89, 176, 213);
 }
-
-
 
 container {
 

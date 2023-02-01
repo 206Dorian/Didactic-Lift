@@ -7,10 +7,12 @@ const Profile = () => {
 <h2> Welcome User</h2>
       
       <br></br>
-      <btn>Search by muscle group</btn>
+      <button>Search muscle group</button>
       
-      <btn>Create new workout</btn>
+      <button>Create new workout</button>
       <br></br>
+      <br></br>
+
 {/* **Need drop down menu here for muscle groups** */}
 <br></br>
 <container className="dropDownBtns">
