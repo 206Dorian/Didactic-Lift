@@ -12,7 +12,7 @@ type User {
 
 type Workout {
   name: String
-  exercises: [Exercise]
+  exercises(ObjectId:ID): [Exercise]
 }
 
 type Exercise {
