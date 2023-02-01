@@ -3,7 +3,14 @@
     "username": "tbarns",
     "email": "test@test.com",
     "password": "1234567",
-    "workouts": []
+    "workouts": [{
+      "name": "bicep workout",
+      "exercises":[
+        "63d88ddcd66466db4db89a34",
+        "63d88ddcd66466db4db89a35",
+        "63d88ddcd66466db4db89a36"
+      ]
+    }]
   },
   {
     "username": "doriangrey",
