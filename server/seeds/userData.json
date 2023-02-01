@@ -3,19 +3,38 @@
     "username": "tbarns",
     "email": "test@test.com",
     "password": "1234567",
-    "workouts": [{
-      "name": "bicep workout",
-      "exercises":[
-        "63d88ddcd66466db4db89a34",
-        "63d88ddcd66466db4db89a35",
-        "63d88ddcd66466db4db89a36"
-      ]
-    }]
+    "workouts": [
+      {
+        "name": "bicep workout",
+        "exercises": [
+          "63d88ddcd66466db4db89a34",
+          "63d88ddcd66466db4db89a35",
+          "63d88ddcd66466db4db89a36"
+        ]
+      }
+    ]
   },
   {
     "username": "doriangrey",
     "email": "test1@test.com",
     "password": "7654321",
-    "workouts": []
+    "workouts": [
+      {
+        "name": "bicep-workout",
+        "exercises": [
+          "63daf741f5ff0ec4b31b092a",
+          "63daf741f5ff0ec4b31b0925",
+          "63daf741f5ff0ec4b31b0925"
+        ]
+      },
+      {
+        "name": "Lat workout",
+        "exercises": [
+          "63d88ddcd66466db4db89a46",
+          "63d88ddcd66466db4db89a47",
+          "63d88ddcd66466db4db89a44"
+        ]
+      }
+    ]
   }
 ]
