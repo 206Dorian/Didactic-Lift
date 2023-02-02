@@ -14,7 +14,7 @@ const Profile = () => {
     // require('dotenv').config();
     // event.preventDefault()
     // setMuscleGroup(muscleGroup);
-    // console.log(muscleGroup)
+    console.log(muscleGroup)
     // const [updated, setUpdated] = useState(muscleGroup);
 
 
@@ -55,35 +55,35 @@ const Profile = () => {
       <container className="dropDownBtns">
         <btn onClick={() => handleFormSubmit('abdominals')} data-value='abdominals'>abdominals</btn>
 
-        <btn>abductors </btn>
+        <btn onClick={() => handleFormSubmit('abductors')} >abductors </btn>
 
-        <btn>adductors  </btn>
+        <btn onClick={() => handleFormSubmit('adductors')} >adductors  </btn>
 
-        <btn>biceps</btn>
+        <btn onClick={() => handleFormSubmit('biceps')} >biceps</btn>
 
-        <btn>calves</btn>
+        <btn onClick={() => handleFormSubmit('calves')} >calves</btn>
 
-        <btn>chest</btn>
+        <btn onClick={() => handleFormSubmit('chest')} >chest</btn>
 
-        <btn>forearms</btn>
+        <btn onClick={() => handleFormSubmit('forearms')} >forearms</btn>
 
-        <btn>glutes</btn>
+        <btn onClick={() => handleFormSubmit('glutes')} >glutes</btn>
 
-        <btn>hamstrings</btn>
+        <btn onClick={() => handleFormSubmit('hamstrings')} >hamstrings</btn>
 
-        <btn>lats</btn>
+        <btn onClick={() => handleFormSubmit('lats')} >lats</btn>
 
-        <btn>lower_back</btn>
+        <btn onClick={() => handleFormSubmit('lower_back')} >lower_back</btn>
 
-        <btn>middle_back</btn>
+        <btn onClick={() => handleFormSubmit('midde_back')} >middle_back</btn>
 
-        <btn>neck</btn>
+        <btn onClick={() => handleFormSubmit('neck')} >neck</btn>
 
-        <btn>quadriceps</btn>
+        <btn onClick={() => handleFormSubmit('quadriceps')} >quadriceps</btn>
 
-        <btn>traps</btn>
+        <btn onClick={() => handleFormSubmit('traps')} >traps</btn>
 
-        <btn>triceps</btn>
+        <btn onClick={() => handleFormSubmit('triceps')} >triceps</btn>
 
       </container>
 
