@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-const axios = require('axios');
+import axios from 'axios';
 const APIKey = process.env.APIKEY
 
 
@@ -13,21 +13,17 @@ const Profile = () => {
 
     // require('dotenv').config();
     // event.preventDefault()
-    // setMuscleGroup(muscleGroup);
+    setMuscleGroup(muscleGroup);
     console.log(muscleGroup)
     // const [updated, setUpdated] = useState(muscleGroup);
-
+    const options = {headers: 
+        
+      {'X-Api-Key': 'akpoUwvyp6/ajUQ13OXQDQ==QRzmUJALDEJyYMlq'}
+    }
 
     try {
-      const response = await fetch(`https://api.api-ninjas.com/v1/exercises?muscle=${muscleGroup}`, {
-        method: 'GET',
-
-        headers: {
-          'Content-Type': 'application/json',
-          'X-Api-Key': 'akpoUwvyp6/ajUQ13OXQDQ==QRzmUJALDEJyYMlq'
-        }
-      });
-      const {data}= await response.json()
+      const response = await axios.get(`https://api.api-ninjas.com/v1/exercises?muscle=${muscleGroup}`, options);
+      const {data}= await response
       console.log('response', data)
       // return response.json();
     } catch (error) {
