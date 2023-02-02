@@ -1,18 +1,34 @@
 import React from 'react'
 
 const Home = () => {
+
+// ******
+
+
   return (
-    <div>
+    <>
 
 <container className='form-btn'>
-                  <btn onclick='login()'>Login </btn>
-                  <btn onclick='register()'>Register</btn>
+                  <form>
+                  Login 
+                  <label>
+    Name:
+    <input type="text" name="name" />
+  </label>
+  <input type="submit" value="Submit" /></form>
+                  <form>Register
+                  <label>
+    Name:
+    <input type="text" name="name" />
+  </label>
+  <input type="submit" value="Submit" />
+                  </form>
                   <hr id='indicator' />
                 </container>
 
      
 
-    </div>
+    </>
   )
 }
 
