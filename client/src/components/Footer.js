@@ -9,7 +9,7 @@ const Footer = () => {
         Send us some love by
         tipping us here
         <br></br>
-        <btn> $$$ </btn>
+        <button> $$$ </button>
         {/* ANCHOR THIS AND ADD STRIPE LINK */}
       </h3>
 

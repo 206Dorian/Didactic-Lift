@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 // import Navigation from './Navigation';
-import Login from './Login';
+import Login from '../components/Login';
 import Profile
  from './Profile';
-import Workout from './Workout';
-import Header from '../Header';
-import Footer from './Footer';
-
+import Workout from '../pages/Workout';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Home from '../pages/Home';
 
 export default function MainContainer() {
   const [currentPage, setCurrentPage] = useState('Login');
@@ -26,11 +26,9 @@ export default function MainContainer() {
 
     if (currentPage === 'Profile') {
         return <Profile />;
-      }
+      };
 
-    return <Resume />;
-
-
+    return Home
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -38,7 +36,7 @@ export default function MainContainer() {
   return (
     <div>
       {/* We are passing the currentPage from state and the function to update it */}
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      {/* <Navigation currentPage={currentPage} handlePageChange={handlePageChange} /> */}
 
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
