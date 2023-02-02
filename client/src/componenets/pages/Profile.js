@@ -39,14 +39,16 @@ const Profile = () => {
 
       <h2> Welcome User</h2>
 
-      
+      <button>Search muscle group</button>
+
+      <button>My Workouts</button>
 
       <button>Create new workout</button>
       <br></br>
      <br></br>
 
       <br></br>
-      <h2>Search muscle group</h2>
+      
       
       <container className="dropDownBtns">
         <btn onClick={() => handleFormSubmit('abdominals')} data-value='abdominals'>abdominals</btn>
