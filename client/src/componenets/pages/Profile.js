@@ -43,15 +43,15 @@ const Profile = () => {
 
       <h2> Welcome User</h2>
 
-      <br></br>
-      <button>Search muscle group</button>
+      
 
       <button>Create new workout</button>
       <br></br>
-      <br></br>
+     <br></br>
 
-      {/* **Need drop down menu here for muscle groups** */}
       <br></br>
+      <h2>Search muscle group</h2>
+      
       <container className="dropDownBtns">
         <btn onClick={() => handleFormSubmit('abdominals')} data-value='abdominals'>abdominals</btn>
 
