@@ -46,20 +46,28 @@ function App() {
   const [currentPage, setCurrentPage] = useState("");
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   return (
-    <container className="App">
-      <Header />
-
-      <Home />
-
-      {/* <Login /> */}
-
-      <Profile />
-      <br></br>
-
-      {/* <div style={{ height: "50px" }}> */}
-        <Footer />
-      {/* </div> */}
-    </container>
+    <ApolloProvider client={client}>
+      <Router>
+        <div className="App">
+          <Header />
+          <Routes>
+            <Route 
+            path="/" 
+            element={<Home />} 
+            />
+            <Route 
+              path="/profile"
+              element={<Profile />}
+            />
+            <Route 
+            path="/workout"
+            element={<Workout />}
+            />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </ApolloProvider>
   );
 }
 
