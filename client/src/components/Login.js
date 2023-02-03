@@ -35,12 +35,12 @@ function Login(props) {
       <Link to="/signup">← Go to Signup</Link>
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email address:</label>
+          <label htmlFor="username">username:</label>
           <input
-            placeholder="youremail@test.com"
-            name="email"
-            type="email"
-            id="email"
+            placeholder="Enter Username"
+            name="username"
+            type="username"
+            id="username"
             onChange={handleChange}
           />
         </div>
