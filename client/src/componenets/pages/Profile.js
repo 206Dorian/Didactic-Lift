@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
-const APIKey = process.env.APIKEY
+const APIKey = process.env.REACT_APP_APIKEY
 
 
 const Profile = () => {

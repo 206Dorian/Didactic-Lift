@@ -17,10 +17,20 @@ const resolvers = {
       return await Exercise.find({});
     },
 
-    Users: async () => {
-      return await User.find({});
-    },
 
+
+
+    Users: async (parent, args, context) => {
+      return await User.find()
+
+    },
+    user: async (parent, args) => {
+      return await User.findById(args.userId)
+      //.populate({
+      //   path: 'workouts',
+      //   populate: { path: 'exercises' }
+      // });
+    }
     // Workouts: async () => {
     //   return await workoutSchema.find({});
     // },
@@ -32,8 +42,8 @@ const resolvers = {
 
       return { token, user };
     },
-    login: async (parent, { email, password }) => {
-      const user = await User.findOne({ email });
+    login: async (parent, { username, password }) => {
+      const user = await User.findOne({ username });
 
       if (!user) {
         throw new AuthenticationError('Incorrect credentials');
@@ -51,20 +61,24 @@ const resolvers = {
     addWorkout: async (parent, { Exercise }, context) => {
       if (context.user) {
         const workout = await workoutSchema.create(
-        [Exercise]
+          [Exercise]
         );
 
         await User.findOneAndUpdate(
-          { _id: context.user._id },
-          { $addToSet: { workouts: workout._id } }
+          { username },
+          { $addToSet: { workouts: workoutSchema._id } }
         );
         return workout;
       }
       throw new AuthenticationError('You need to be logged in!');
-    }
+    },
 
+    deleteUser: async (parent, username) => {
+      const user = await User.findOneAndDelete(username);
+      
 
-
+      return (`We will miss you ${user}`);
+    },
   }
 };
 

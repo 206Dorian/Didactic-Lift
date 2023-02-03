@@ -5,11 +5,11 @@
     "password": "1234567",
     "workouts": [
       {
-        "name": "bicep workout",
+        "name": "Tuesday workout",
         "exercises": [
-          "63d88ddcd66466db4db89a34",
-          "63d88ddcd66466db4db89a35",
-          "63d88ddcd66466db4db89a36"
+          "63dafa65578ba56b437f0d94",
+          "63dafa65578ba56b437f0d95",
+          "63dafa65578ba56b437f0d96"
         ]
       }
     ]
