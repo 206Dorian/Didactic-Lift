@@ -24,6 +24,9 @@ const Footer = () => {
         Send us some love by
         tipping us here
         <br></br>
+<<<<<<< HEAD:client/src/components/Footer.js
+        <button> $$$ </button>
+=======
       </h3>
 
       <a href="https://buy.stripe.com/dR617567dgOcgog7st" target="_blank" rel="noopener noreferrer"> $$$ 
@@ -32,6 +35,7 @@ const Footer = () => {
       <a href="https://climate.stripe.com/S2RQQU" target="_blank" rel="noopener noreferrer">Didactic Lift supports the environment!
       </a>
 
+>>>>>>> main:client/src/componenets/Footer.js
         {/* ANCHOR THIS AND ADD STRIPE LINK */}
 
         {/* Link for redirecting users to go give us moneys: https://buy.stripe.com/dR617567dgOcgog7st */}

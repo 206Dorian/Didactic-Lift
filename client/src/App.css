@@ -43,9 +43,11 @@ form {
   height: 60%;
   padding: 50px;
 
-}/* p {
+} 
+
+p { 
   color: #f5f1f1;
-} */
+} 
 
 button {
   display: inline-block;
