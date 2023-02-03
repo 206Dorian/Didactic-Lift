@@ -19,20 +19,13 @@ const Footer = () => {
   return (
     <>
 
-      <h3 className="foot-header">  We hope this *Lifted* your spirits
-        <br></br>
-        Send us some love by
-        tipping us here
-        <br></br>
+      <h3 className="foot-header"><p>We hope this *Lifted* your spirits</p>
+        <h5>Send us some love by
+        tipping us <a href="https://buy.stripe.com/dR617567dgOcgog7st" target="_blank" rel="noopener noreferrer" className='tip-btn'>here!</a></h5>
+        {/* <br></br> */}
       </h3>
-
-      <a href="https://buy.stripe.com/dR617567dgOcgog7st" target="_blank" rel="noopener noreferrer"> $$$ 
+      <a href="https://climate.stripe.com/S2RQQU" target="_blank" rel="noopener noreferrer" className='carbon-btn'>Didactic Lift supports the environment!
       </a>
-<br></br>
-      <a href="https://climate.stripe.com/S2RQQU" target="_blank" rel="noopener noreferrer">Didactic Lift supports the environment!
-      </a>
-
-        {/* ANCHOR THIS AND ADD STRIPE LINK */}
 
         {/* Link for redirecting users to go give us moneys: https://buy.stripe.com/dR617567dgOcgog7st */}
 

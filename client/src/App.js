@@ -21,9 +21,9 @@ function App() {
       <Profile />
       <br></br>
 
-      <div style={{ height: "50px" }}>
+      {/* <div style={{ height: "50px" }}> */}
         <Footer />
-      </div>
+      {/* </div> */}
     </container>
   );
 }
