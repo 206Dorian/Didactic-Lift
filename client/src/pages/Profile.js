@@ -50,7 +50,7 @@ const Profile = () => {
       <br></br>
       
       
-      <container className="dropDownbuttons">
+      <container className="dropDownBtns">
         <button onClick={() => handleFormSubmit('abdominals')} data-value='abdominals'>abdominals</button>
 
         <button onClick={() => handleFormSubmit('abductors')} >abductors </button>
