@@ -11,7 +11,7 @@ position: relative;
 }
 
 
-div {
+/* div {
   display: flex-box;
   flex-direction: row-reverse;
   padding: 50px;
@@ -26,6 +26,22 @@ div {
   height: 60%;
   padding: 50px;
 
+} */
+
+div#root {
+  display: flex-box;
+  flex-direction: row-reverse;
+  padding: 50px;
+  background-color: rgb(74, 107, 120);
+  box-sizing: border-box 30px;
+  border: 10px solid rgb(10, 57, 98);
+  font-size: 40px;
+  text-align: center;
+  display: center;
+  margin: auto;
+  width: 60%;
+  height: 60%;
+  padding: 50px;
 }
 
 form {
