@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import "./Footer.css"
-import StripeButton from './StripeButton'
 
 // const Button = styled.button`
 //   padding: 32px;
@@ -26,8 +25,9 @@ const Footer = () => {
         tipping us here
         <br></br>
       </h3>
-      {/* <StripeButton /> */}
-      
+
+      <a href="https://buy.stripe.com/dR617567dgOcgog7st" target="_blank" rel="noopener noreferrer"> $$$ 
+      </a>
 
         {/* ANCHOR THIS AND ADD STRIPE LINK */}
 
