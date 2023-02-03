@@ -28,6 +28,9 @@ const Footer = () => {
 
       <a href="https://buy.stripe.com/dR617567dgOcgog7st" target="_blank" rel="noopener noreferrer"> $$$ 
       </a>
+<br></br>
+      <a href="https://climate.stripe.com/S2RQQU" target="_blank" rel="noopener noreferrer">Didactic Lift supports the environment!
+      </a>
 
         {/* ANCHOR THIS AND ADD STRIPE LINK */}
 
