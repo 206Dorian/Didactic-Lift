@@ -1,22 +1,46 @@
 import React from 'react'
+import styled from '@emotion/styled'
+import "./Footer.css"
+
+// const Button = styled.button`
+//   padding: 32px;
+//   background-color: hotpink;
+//   font-size: 24px;
+//   border-radius: 4px;
+//   color: black;
+//   font-weight: bold;
+//   &:hover {
+//     color: white;
+//   }
+// `
+
 
 const Footer = () => {
   return (
     <>
 
-      <h3>  We hope this *Lifted* your spirits
+      <h3 className="foot-header">  We hope this *Lifted* your spirits
         <br></br>
         Send us some love by
         tipping us here
         <br></br>
+<<<<<<< HEAD:client/src/components/Footer.js
         <button> $$$ </button>
+=======
+      </h3>
+
+      <a href="https://buy.stripe.com/dR617567dgOcgog7st" target="_blank" rel="noopener noreferrer"> $$$ 
+      </a>
+<br></br>
+      <a href="https://climate.stripe.com/S2RQQU" target="_blank" rel="noopener noreferrer">Didactic Lift supports the environment!
+      </a>
+
+>>>>>>> main:client/src/componenets/Footer.js
         {/* ANCHOR THIS AND ADD STRIPE LINK */}
 
         {/* Link for redirecting users to go give us moneys: https://buy.stripe.com/dR617567dgOcgog7st */}
 
         {/* link for shameless carbon-offset plug: https://climate.stripe.com/S2RQQU */}
-
-      </h3>
 
     </>
   )
