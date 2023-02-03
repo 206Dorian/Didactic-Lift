@@ -12,7 +12,7 @@ type User {
 
 type Workout {
   name: String
-  exercises(ObjectId:ID): [Exercise]
+  exercises(id:ID): [Exercise]
 }
 
 type Exercise {
@@ -27,13 +27,13 @@ type Exercise {
 
 
 type Auth {
-  token: ID!
+  token: ID
   user: User
 }
 
   type Query {
     Users: [User]
-    user(username: String!): User
+    user(userId: ID!): User
     Exercises:[Exercise]
     me: User
   }
@@ -42,9 +42,10 @@ type Auth {
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
-    login(email: String!, password: String!): Auth
+    login(username: String!, password: String!): Auth
     addWorkout(name: String, exercises:String): User
     removeWorkout(workoutId: ID!): User
+    deleteUser(username: String!): User
   }
 
 `;
