@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { css } from "@emotion/react";
 import { useMutation } from "@apollo/client";
 import { Link } from "react-router-dom";
 import { LOGIN } from "../utils/mutations";
 import Auth from "../utils/auth";
 
 function Login(props) {
-  const [formState, setFormState] = useState({ email: "", password: "" });
+  const [formState, setFormState] = useState({ username: "", password: "" });
   const [login, error] = useMutation(LOGIN);
 
   const handleChange = (event) => {
@@ -21,7 +20,7 @@ function Login(props) {
     event.preventDefault();
     try {
       const mutationResponse = await login({
-        variables: { email: formState.email, password: formState.password },
+        variables: { username: formState.username, password: formState.password },
       });
       const token = mutationResponse.data.login.token;
       Auth.login(token);
