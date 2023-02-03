@@ -11,6 +11,11 @@ const Footer = () => {
         <br></br>
         <button> $$$ </button>
         {/* ANCHOR THIS AND ADD STRIPE LINK */}
+
+        {/* Link for redirecting users to go give us moneys: https://buy.stripe.com/dR617567dgOcgog7st */}
+
+        {/* link for shameless carbon-offset plug: https://climate.stripe.com/S2RQQU */}
+
       </h3>
 
     </>
