@@ -4,9 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node seeds/seed.js && node server.js",
+    "start": "node server.js",
     "watch": "node server.js",
-    "seed": "node seeds/seed.js"
+    "seed": "node seeds/seed.js",
+    "heroku-postbuild": "node seeds/seed.js"
+
   },
   "keywords": [],
   "author": "",
