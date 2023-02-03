@@ -50,38 +50,38 @@ const Profile = () => {
       <br></br>
       
       
-      <container className="dropDownBtns">
-        <btn onClick={() => handleFormSubmit('abdominals')} data-value='abdominals'>abdominals</btn>
+      <container className="dropDownbuttons">
+        <button onClick={() => handleFormSubmit('abdominals')} data-value='abdominals'>abdominals</button>
 
-        <btn onClick={() => handleFormSubmit('abductors')} >abductors </btn>
+        <button onClick={() => handleFormSubmit('abductors')} >abductors </button>
 
-        <btn onClick={() => handleFormSubmit('adductors')} >adductors  </btn>
+        <button onClick={() => handleFormSubmit('adductors')} >adductors  </button>
 
-        <btn onClick={() => handleFormSubmit('biceps')} >biceps</btn>
+        <button onClick={() => handleFormSubmit('biceps')} >biceps</button>
 
-        <btn onClick={() => handleFormSubmit('calves')} >calves</btn>
+        <button onClick={() => handleFormSubmit('calves')} >calves</button>
 
-        <btn onClick={() => handleFormSubmit('chest')} >chest</btn>
+        <button onClick={() => handleFormSubmit('chest')} >chest</button>
 
-        <btn onClick={() => handleFormSubmit('forearms')} >forearms</btn>
+        <button onClick={() => handleFormSubmit('forearms')} >forearms</button>
 
-        <btn onClick={() => handleFormSubmit('glutes')} >glutes</btn>
+        <button onClick={() => handleFormSubmit('glutes')} >glutes</button>
 
-        <btn onClick={() => handleFormSubmit('hamstrings')} >hamstrings</btn>
+        <button onClick={() => handleFormSubmit('hamstrings')} >hamstrings</button>
 
-        <btn onClick={() => handleFormSubmit('lats')} >lats</btn>
+        <button onClick={() => handleFormSubmit('lats')} >lats</button>
 
-        <btn onClick={() => handleFormSubmit('lower_back')} >lower_back</btn>
+        <button onClick={() => handleFormSubmit('lower_back')} >lower_back</button>
 
-        <btn onClick={() => handleFormSubmit('midde_back')} >middle_back</btn>
+        <button onClick={() => handleFormSubmit('midde_back')} >middle_back</button>
 
-        <btn onClick={() => handleFormSubmit('neck')} >neck</btn>
+        <button onClick={() => handleFormSubmit('neck')} >neck</button>
 
-        <btn onClick={() => handleFormSubmit('quadriceps')} >quadriceps</btn>
+        <button onClick={() => handleFormSubmit('quadriceps')} >quadriceps</button>
 
-        <btn onClick={() => handleFormSubmit('traps')} >traps</btn>
+        <button onClick={() => handleFormSubmit('traps')} >traps</button>
 
-        <btn onClick={() => handleFormSubmit('triceps')} >triceps</btn>
+        <button onClick={() => handleFormSubmit('triceps')} >triceps</button>
 
       </container>
 
