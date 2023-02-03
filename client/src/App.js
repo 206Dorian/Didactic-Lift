@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Login from "./components/Login";
 import Profile from "./pages/Profile";
 import Workout from "./pages/Workout";
 // import { css } from '@emotion/react';

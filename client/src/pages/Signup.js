@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ADD_USER } from "../utils/mutations";
 import Auth from "../utils/auth";
 
-function Login(props) {
+function Signup(props) {
     const [formState, setFormState] = useState({ username: "", email: "", password: "" });
     const [addUser, error] = useMutation(ADD_USER);
 
@@ -18,15 +18,21 @@ function Login(props) {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
+        console.log(formState)
+        console.log(event)
+
         try {
             const mutationResponse = await addUser({
                 variables: {
-                    username: formState.username,
-                    email: formState.email,
-                    password: formState.password
+                    // username: formState.username,
+                    // email: formState.email,
+                    // password: formState.password
+                    ...formState
                 },
             });
             const token = mutationResponse.data.addUser.token;
+            console.log(mutationResponse)
+            console.log(token)
             Auth.login(token);
         } catch (e) {
             console.log(e);
@@ -40,10 +46,11 @@ function Login(props) {
                 <div className="flex-row space-between my-2">
                     <label htmlFor="username">username:</label>
                     <input
+                        value={formState.username}
                         placeholder="Enter Username"
                         name="username"
                         type="username"
-                        id="username"
+                        id="signupUsername"
                         onChange={handleChange}
                     />
                 </div>
@@ -52,6 +59,7 @@ function Login(props) {
                 <div className="flex-row space-between my-2">
                     <label htmlFor="email">Email:</label>
                     <input
+                        value={formState.email}
                         placeholder="youremail@test.com"
                         name="email"
                         type="email"
@@ -61,12 +69,13 @@ function Login(props) {
                 </div>
 
                 <div className="flex-row space-between my-2">
-                    <label htmlFor="pwd">Password:</label>
+                    <label htmlFor="password">Password:</label>
                     <input
+                        value={formState.password}
                         placeholder="******"
                         name="password"
                         type="password"
-                        id="pwd"
+                        id="signupPwd"
                         onChange={handleChange}
                     />
                 </div>
