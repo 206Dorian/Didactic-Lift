@@ -2,7 +2,34 @@
     font-size: 12px;
 }
 
-.tip-btn {
-    height: 2px;
+.carbon-btn {
+    display: flex;
+    font-size: 14px;
+}
 
+.carbon-btn:link{
+    background-color: yellow;
+    color: rgb(2, 103, 42);
+}
+
+.carbon-btn:visited {
+    background-color: rgb(188, 161, 56);
+    color: rgb(19, 120, 108);
+}
+
+.carbon-btn:hover{
+    background-color: rgb(0, 115, 255);
+    color: rgb(255, 27, 244);
+}
+
+.tip-btn:link {
+    color: rgb(0, 115, 255);
+}
+
+.tip-btn:visited {
+    color: rgb(255, 27, 244);
+}
+
+.tip-btn:hover {
+    color: rgb(253, 127, 31);
 }
