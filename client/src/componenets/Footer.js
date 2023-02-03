@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import "./Footer.css"
+import StripeButton from './StripeButton'
 
 // const Button = styled.button`
 //   padding: 32px;
@@ -25,8 +26,9 @@ const Footer = () => {
         tipping us here
         <br></br>
       </h3>
+      {/* <StripeButton /> */}
       
-      <button className="tip-btn" onclick="window.location.href='https://buy.stripe.com/dR617567dgOcgog7st'"> $$$ </button>
+
         {/* ANCHOR THIS AND ADD STRIPE LINK */}
 
         {/* Link for redirecting users to go give us moneys: https://buy.stripe.com/dR617567dgOcgog7st */}
