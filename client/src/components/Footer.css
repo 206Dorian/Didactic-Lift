@@ -1,25 +1,8 @@
 .foot-header {
-    font-size: 16px;
-    color: white;
+    font-size: 12px;
 }
 
 .tip-btn {
-}
+    height: 2px;
 
-.carbon-btn {
-    font-size: 12px;
-    text-align: center;
-    background-color: yellow;
-}
-
-a:link {
-    color: red;
-}
-
-a:visited {
-    color: green;
-}
-
-a:hover {
-    color: pink;
 }
