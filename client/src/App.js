@@ -1,37 +1,37 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Login from './components/Login';
-import Profile from './pages/Profile';
-import Workout from './pages/Workout';
-import { css } from '@emotion/react';
-import Home from './pages/Home';
-import React, { useState } from 'react'
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Login from "./components/Login";
+import Profile from "./pages/Profile";
+import Workout from "./pages/Workout";
+// import { css } from '@emotion/react';
+import Home from "./pages/Home";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
-} from '@apollo/client';
-import { setContext } from '@apollo/client/link/context';
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
 
-import './App.css';
-import { APICall } from './components/APIcall';
-
+import "./App.css";
+import { APICall } from "./components/APIcall";
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: "/graphql",
 });
 
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
-  const token = localStorage.getItem('id_token');
+  const token = localStorage.getItem("id_token");
   // return the headers to the context so httpLink can read them
   return {
     headers: {
       ...headers,
-      authorization: token ? `Bearer ${token}` : '',
+      authorization: token ? `Bearer ${token}` : "",
     },
   };
 });
@@ -43,35 +43,31 @@ const client = new ApolloClient({
 });
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('Login');
-
+  const [currentPage, setCurrentPage] = useState("");
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
-  const renderPage = (currentPage) => {
-    if (currentPage === 'Home') {
-      return <Home />;
-    }
-    if (currentPage === 'Login') {
-      return <Login />;
-    }
-
-    if (currentPage === 'Wokout') {
-      return <Workout />;
-    }
-
-    if (currentPage === 'Profile') {
-        return <Profile />;
-      };
-  };
   return (
     <ApolloProvider client={client}>
-      <div className="App">
-        <Header />
-         <Login />
-         <br></br>
-        <Footer />
-      </div>
-     </ApolloProvider>
-    
+      <Router>
+        <div className="App">
+          <Header />
+          <Routes>
+            <Route 
+            path="/" 
+            element={<Home />} 
+            />
+            <Route 
+              path="/profile"
+              element={<Profile />}
+            />
+            <Route 
+            path="/workout"
+            element={<Workout />}
+            />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </ApolloProvider>
   );
 }
 
