@@ -16,7 +16,6 @@ import {
 import { setContext } from "@apollo/client/link/context";
 
 import "./App.css";
-import { APICall } from "./components/APIcall";
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
