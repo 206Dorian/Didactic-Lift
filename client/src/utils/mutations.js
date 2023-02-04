@@ -20,3 +20,21 @@ export const ADD_USER = gql`
   }
 `;
 
+export const USER_WORKOUTS = gql`
+query user {
+  user {
+    workouts {
+      name
+      exercises {
+        name
+        instructions
+        equipment
+        muscle
+        difficulty
+        type
+        _id
+      }
+    }
+  }
+}
+`

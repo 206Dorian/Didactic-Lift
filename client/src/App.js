@@ -2,6 +2,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Profile from "./pages/Profile";
 import Workout from "./pages/Workout";
+import Workouts from "./pages/Workouts";
+
 // import { css } from '@emotion/react';
 import Home from "./pages/Home";
 import React, { useState } from "react";
@@ -49,18 +51,10 @@ function App() {
         <div className="App">
           <Header />
           <Routes>
-            <Route 
-            path="/" 
-            element={<Home />} 
-            />
-            <Route 
-              path="/profile"
-              element={<Profile />}
-            />
-            <Route 
-            path="/workout"
-            element={<Workout />}
-            />
+            <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/workout" element={<Workout />} />
+            <Route path="/workouts" element={<Workouts />} />
           </Routes>
           <Footer />
         </div>
