@@ -35,10 +35,11 @@ export default function Workout() {
   };
   console.log(data);
   return (
-    //Add exercise search
+    //Add exercise search bar?
     <>
       <h2>Workout Name</h2>
-      
+      {/* Render exercises saved to workout */}
+
       {/* {loading ? (
         <div>loading</div>
       ) : (
