@@ -1,35 +1,70 @@
+.enchilada {
+    position: relative;
+    top: 20px;
+    height: 100px;
+}
+
 .foot-header {
+    font-size: 10px;
+}
+
+#spirits {
     font-size: 12px;
 }
 
 .carbon-btn {
     display: flex;
-    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 500;
 }
 
-.carbon-btn:link{
-    background-color: yellow;
-    color: rgb(2, 103, 42);
+a {
+    text-decoration: none;
 }
 
-.carbon-btn:visited {
-    background-color: rgb(188, 161, 56);
-    color: rgb(19, 120, 108);
+a:link {
+    color: rgb(3, 65, 147);
 }
 
-.carbon-btn:hover{
-    background-color: rgb(0, 115, 255);
-    color: rgb(255, 27, 244);
+a:visited {
+    color: rgb(181, 16, 172);
 }
 
-.tip-btn:link {
-    color: rgb(0, 115, 255);
+a:hover {
+    color: rgb(253, 168, 31);
 }
 
-.tip-btn:visited {
-    color: rgb(255, 27, 244);
+#footerfooter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    position: relative;
+    bottom: 5px;
 }
 
-.tip-btn:hover {
-    color: rgb(253, 127, 31);
+#heart {
+    font-size: 18px;
+    position: relative;
+    bottom: 5px;
+}
+
+#LDE-4eva {
+    position: relative;
+    left: 3px;
+}
+
+#LDE-4eva:link {
+    color: white;
+}
+
+#LDE-4eva:visited {
+    color: white;
+}
+
+#LDE-4eva:hover {
+    color: rgb(0, 255, 8);
 }
