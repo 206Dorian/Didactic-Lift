@@ -112,6 +112,7 @@ container {
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
+  align-items: center;
 }
 
 form .btn {
