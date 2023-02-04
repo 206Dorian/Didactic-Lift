@@ -24,12 +24,12 @@ const resolvers = {
       return await User.find()
 
     },
-    user: async (parent, args) => {
-      return await User.findById(args.userId)
-      //.populate({
-      //   path: 'workouts',
-      //   populate: { path: 'exercises' }
-      // });
+    user: async (parent, args, context) => {
+      return await User.findById(context.user._id)
+      .populate({
+        path: 'workouts',
+        populate: { path: 'exercises' }
+      });
     }
     // Workouts: async () => {
     //   return await workoutSchema.find({});

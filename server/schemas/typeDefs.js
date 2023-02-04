@@ -33,7 +33,7 @@ type Auth {
 
   type Query {
     Users: [User]
-    user(userId: ID!): User
+    user: User
     Exercises:[Exercise]
     me: User
   }

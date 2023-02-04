@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 const APIKey = process.env.APIKEY
 
 
@@ -33,7 +35,6 @@ const Profile = () => {
 
   }
 
-
   return (
     <>
 
@@ -41,7 +42,8 @@ const Profile = () => {
 
       <button>Search muscle group</button>
 
-      <button>My Workouts</button>
+      <Link to = "/Workout"
+      >My Workouts</Link>
 
       <button>Create new workout</button>
       <br></br>
