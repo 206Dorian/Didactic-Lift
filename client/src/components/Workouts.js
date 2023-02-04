@@ -6,11 +6,11 @@ export default function Workouts() {
   console.log(data);
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <div>loading</div>
       ) : (
-        data.user.workouts.map((workouts) => <div key={workouts._id}>{workouts.name}</div>)
-      )}
+        data.user.workouts.workout.map((workout) => <div key={workout._id}>{workout.name}</div>)
+      )} */}
     </>
   );
 }

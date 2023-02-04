@@ -1,13 +1,8 @@
-import React from "react";
-
 import { Link } from "react-router-dom";
 import Workouts from "../components/Workouts"
 
-
-
-const Profile = () => {
+export default function Profile() {
  
-
   return (
     <>
       <h2> Welcome User</h2>
@@ -18,11 +13,10 @@ const Profile = () => {
       <br></br>
       <br></br>
       <h2>My Workouts</h2>
-      {/* <Workouts /> */}
+      <Workouts />
       <br></br>
 
     </>
   );
 };
 
-export default Profile;

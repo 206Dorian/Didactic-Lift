@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = () => {
+export default function Header() {
   return (
     <>
       <h1>🦾 DIDACTIC LIFT🦾</h1>
@@ -8,5 +8,3 @@ const Header = () => {
     </>
   )
 }
-
-export default Header
