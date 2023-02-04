@@ -28,7 +28,7 @@ const resolvers = {
       return await User.findById(context.user._id)
       .populate({
         path: 'workouts',
-        populate: { path: 'exercises' }
+        populate: { path: 'workout' }
       });
     }
     // Workouts: async () => {

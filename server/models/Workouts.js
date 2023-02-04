@@ -1,5 +1,5 @@
 const {mongoose, Schema} = require('mongoose');
-const workoutSchema = new mongoose.Schema(
+const workoutsSchema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -8,9 +8,9 @@ const workoutSchema = new mongoose.Schema(
       trim: true,
     },
 
-    exercises: [{
+    workout: [{
       type: Schema.Types.ObjectId,
-      ref: 'Exercise'
+      ref: 'Workout'
     }],
 
   },
@@ -23,4 +23,4 @@ const workoutSchema = new mongoose.Schema(
   }
 );
 
-module.exports = workoutSchema;
+module.exports = workoutsSchema;

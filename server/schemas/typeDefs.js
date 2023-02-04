@@ -7,7 +7,12 @@ type User {
   username: String
   email: String
   password: String
-  workouts: [Workout] 
+  workouts: [Workouts] 
+}
+
+type Workouts {
+  name: String
+  workout(id:ID): [Workout]
 }
 
 type Workout {

@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Profile from "./pages/Profile";
 import Workout from "./pages/Workout";
-import Workouts from "./pages/Workouts";
+import Workouts from "./components/Workouts";
 
 // import { css } from '@emotion/react';
 import Home from "./pages/Home";
