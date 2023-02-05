@@ -18,7 +18,17 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    workouts: [workoutsSchema],
+    age: {
+      type: Number,
+    },
+    height: {
+      type: String,
+    },
+    weight:
+    {
+      type: Number,
+    }
+
   },
   {
     toJSON: {
