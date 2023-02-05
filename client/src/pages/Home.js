@@ -6,7 +6,9 @@ export default function Home(){
   return (
     <div className="container" id="test">
       <Login />
+      <br></br>
       <Signup />
+      <br></br>
     </div>
   )
 }
