@@ -2,39 +2,11 @@
   {
     "username": "tbarns",
     "email": "test@test.com",
-    "password": "1234567",
-    "workouts": [
-      {
-        "name": "Tuesday workout",
-        "exercises": [
-          "63dafa65578ba56b437f0d94",
-          "63dafa65578ba56b437f0d95",
-          "63dafa65578ba56b437f0d96"
-        ]
-      }
-    ]
+    "password": "1234567"
   },
   {
     "username": "doriangrey",
     "email": "test1@test.com",
-    "password": "7654321",
-    "workouts": [
-      {
-        "name": "bicep-workout",
-        "exercises": [
-          "63daf741f5ff0ec4b31b092a",
-          "63daf741f5ff0ec4b31b0925",
-          "63daf741f5ff0ec4b31b0925"
-        ]
-      },
-      {
-        "name": "Lat workout",
-        "exercises": [
-          "63d88ddcd66466db4db89a46",
-          "63d88ddcd66466db4db89a47",
-          "63d88ddcd66466db4db89a44"
-        ]
-      }
-    ]
+    "password": "7654321"
   }
 ]

@@ -7,9 +7,9 @@ type User {
   username: String
   email: String
   password: String
-  age: Number
+  age: String
   height: String
-  weight: Number
+  weight: String
  
 }
 
@@ -41,10 +41,10 @@ type Auth {
 
 
   type Mutation {
-    addUser(username: String!, email: String!, password: String!, height: String, weight: Number, age: Number): Auth
+    addUser(username: String!, email: String!, password: String!, height: String, weight: String, age: String): Auth
     login(username: String!, password: String!): Auth
     deleteUser(username: String!): User
-    updateUser(username: String, height: String, weight: Number, age: Number): User 
+    updateUser(username: String, height: String, weight: String, age: String): User 
   }
 
 `;
