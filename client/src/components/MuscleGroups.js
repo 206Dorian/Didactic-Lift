@@ -35,23 +35,7 @@ export default function Workout() {
   };
   console.log(data);
   return (
-    //Add exercise search bar?
     <>
-      <h2>Workout Name</h2>
-      {/* Render exercises saved to workout */}
-
-      {/* {loading ? (
-        <div>loading</div>
-      ) : (
-        data.user.workouts.workout.map((workout) => (
-          <div key={workout._id}>
-            {workout.exercises.map((exercise) => (
-              <div key={exercise._id}>{exercise.name}</div>
-            ))}
-          </div>
-        ))
-      )} */}
-      
       <div className="dropDownBtns">
         <button
           onClick={() => handleFormSubmit("abdominals")}
