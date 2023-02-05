@@ -1,11 +1,10 @@
 import { useQuery } from "@apollo/client";
-import { USER_WORKOUTS } from "../utils/mutations";
 import { useState } from "react";
 import axios from "axios";
 const APIKey = process.env.APIKEY;
 
 export default function Workout() {
-  const { loading, data } = useQuery(USER_WORKOUTS);
+
 
   const [muscleGroup, setMuscleGroup] = useState("");
   // const handleChange = (event) => {

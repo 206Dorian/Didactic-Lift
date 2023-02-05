@@ -13,28 +13,20 @@ export const LOGIN = gql`
 
 
 export const ADD_USER = gql`
-  mutation addUser($username: String!, $email: String!, $password: String!) {
-    addUser(username: $username, email: $email, password: $password) {
+  mutation addUser($username: String!, $email: String!, $password: String!, $height: String, $weight: Number, $age: Number) {
+    addUser(username: $username, email: $email, password: $password, height:$height, age: $age, weight: $weight) {
       token
     }
   }
-`;
+`
 
-export const USER_WORKOUTS = gql`
-query user {
-  user {
-    workouts {
-      name
-      exercises {
-        name
-        instructions
-        equipment
-        muscle
-        difficulty
-        type
-        _id
-      }
-    }
-  }
+export const DELETE_USER = gql`
+  mutation deleteUser($username: String!){ 
+    deleteUser(username:$username)
 }
+`
+
+export const UPDATE_USER = gql`
+  mutation updateUser($username: String, $height: String, $weight: Number, $age: Number) {
+    updateUser(username: $username, height:$height, age: $age, weight: $weight)
 `

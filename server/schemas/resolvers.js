@@ -17,23 +17,15 @@ const resolvers = {
       return await Exercise.find({});
     },
 
-
-
-
     Users: async (parent, args, context) => {
       return await User.find()
 
     },
     user: async (parent, args, context) => {
       return await User.findById(context.user._id)
-      .populate({
-        path: 'workouts',
-        populate: { path: 'workout' }
-      });
+        ;
     }
-    // Workouts: async () => {
-    //   return await workoutSchema.find({});
-    // },
+
   },
   Mutation: {
     addUser: async (parent, args) => {
@@ -58,26 +50,15 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    addWorkout: async (parent, { Exercise }, context) => {
-      if (context.user) {
-        const workout = await workoutSchema.create(
-          [Exercise]
-        );
-
-        await User.findOneAndUpdate(
-          { username },
-          { $addToSet: { workouts: workoutSchema._id } }
-        );
-        return workout;
-      }
-      throw new AuthenticationError('You need to be logged in!');
+    updateUser: async (parent, { username, height, weight, age }) => {
+      const user = await User.findOneAndUpdate({ username })
+      return user;
     },
 
     deleteUser: async (parent, username) => {
       const user = await User.findOneAndDelete(username);
-      
-
       return (`We will miss you ${user}`);
+      
     },
   }
 };

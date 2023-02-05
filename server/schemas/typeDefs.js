@@ -7,18 +7,13 @@ type User {
   username: String
   email: String
   password: String
-  workouts: [Workouts] 
+  age: Number
+  height: String
+  weight: Number
+ 
 }
 
-type Workouts {
-  name: String
-  workout(id:ID): [Workout]
-}
 
-type Workout {
-  name: String
-  exercises(id:ID): [Exercise]
-}
 
 type Exercise {
   _id: ID
@@ -34,7 +29,7 @@ type Exercise {
 type Auth {
   token: ID
   user: User
-}
+} 
 
   type Query {
     Users: [User]
@@ -46,11 +41,10 @@ type Auth {
 
 
   type Mutation {
-    addUser(username: String!, email: String!, password: String!): Auth
+    addUser(username: String!, email: String!, password: String!, height: String, weight: Number, age: Number): Auth
     login(username: String!, password: String!): Auth
-    addWorkout(name: String, exercises:String): User
-    removeWorkout(workoutId: ID!): User
     deleteUser(username: String!): User
+    updateUser(username: String, height: String, weight: Number, age: Number): User 
   }
 
 `;
