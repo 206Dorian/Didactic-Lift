@@ -1,22 +1,22 @@
 import { Link } from "react-router-dom";
-import Workouts from "../components/Workouts"
+import MuscleGroups from "../components/MuscleGroups";
+import Exercise from "../components/Exercise";
+import UserInfo from "../components/UserInfo";
 
 export default function Profile() {
- 
   return (
     <>
-      <h2> Welcome User</h2>
+      <div>
+        <UserInfo />
+      </div>
 
-      <button>Search muscle group</button>
-      <button>
-        <Link to="/Workout">Create new workout</Link></button>
-      <br></br>
-      <br></br>
-      <h2>My Workouts</h2>
-      <Workouts />
-      <br></br>
-
+      <div>
+        {/* FIRST Render MuscleGroups component with buttons by default */}
+        <MuscleGroups />
+        <br></br>
+        {/* THEN Render Exercise component 10x from API call for button selected */}
+        <Exercise />
+      </div>
     </>
   );
-};
-
+}
