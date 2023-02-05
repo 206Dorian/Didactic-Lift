@@ -32,7 +32,6 @@ export default function Workout() {
       console.error(error);
     }
   };
-  console.log(data);
   return (
     <>
       <div className="dropDownBtns">

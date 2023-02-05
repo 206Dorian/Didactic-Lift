@@ -1,6 +1,5 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
-const workoutsSchema = require('./Workouts')
 const userSchema = new Schema(
   {
     username: {
@@ -19,14 +18,17 @@ const userSchema = new Schema(
       required: true,
     },
     age: {
-      type: Number,
+      type: String,
+      required: false
     },
     height: {
       type: String,
+      required: false
     },
     weight:
     {
-      type: Number,
+      type: String,
+      required: false
     }
 
   },
