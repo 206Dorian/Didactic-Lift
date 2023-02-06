@@ -44,7 +44,7 @@ type Auth {
     addUser(username: String!, email: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
     deleteUser(username: String!): User
-    updateUser(username: String, height: String, weight: String, age: String): User 
+    updateUser(height: String!, weight: String!, age: String!): User 
   }
 
 `;

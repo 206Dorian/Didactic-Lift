@@ -40,6 +40,7 @@ export default function Signup(props) {
     };
 
     return (
+        <>
         <div className="container my-1">
             <form className="form-title" onSubmit={handleFormSubmit}>Signup
                 <div className="flex-row space-between my-2">
@@ -80,7 +81,7 @@ export default function Signup(props) {
                 </div>
                 {error ? (
                     <div>
-                        <p className="error-text">The provided credentials are incorrect</p>
+                        {/* <p className="error-text">The provided credentials are incorrect</p> */}
                     </div>
                 ) : null}
                 <div id="btn-container" className="flex-row flex-end">
@@ -88,6 +89,8 @@ export default function Signup(props) {
                 </div>
             </form>
         </div>
+        </>
+        
     );
 }
 

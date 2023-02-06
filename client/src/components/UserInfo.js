@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
-import Auth from '../utils/auth';
-
-import { UPDATE_USER } from '../utils/mutations';
-import { DELETE_USER } from '../utils/mutations';
+import React, { useState } from "react";
+import { UPDATE_USER, DELETE_USER } from "../utils/mutations";
+import { useMutation } from "@apollo/client";
+import Auth from "../utils/auth";
 
 
+export default function UserInfo(props) {
 
-export default function UserInfo (props) {
+  const [updateFormState, setUpdateFormState] = useState([]);
+
+  const deleteUser = useMutation(DELETE_USER);
 
   const [userData, setUserData] = useState({age:"", height:"", weight:""});
   const [updateUser, { error }] = useMutation(UPDATE_USER);
@@ -38,6 +38,7 @@ export default function UserInfo (props) {
     <div className="user-container">
       <form onSubmit={handleUserUpdate}>
         <h2> Welcome {Auth.getProfile().data.username}! </h2>
+        <h3> age:{Auth.getProfile().data.age} </h3>
         <label>Age: </label>
         <input name="age" value={userData.age} onChange={handleChange}placeholder="Input your age" />
         <label>Height: </label>
