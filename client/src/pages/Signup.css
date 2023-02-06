@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-title {
+    color: rgb(250, 150, 100);
+    width: 100%;
+    font-size: 6.66vw;
+    padding: 0;
+}
+
+.flex-row {
+    width: 100%;
+    color: black;
+    font-size: 4vw;;
+}
+
+.input-field {
+    width: 100%;
+    text-align: center;
+}
+
+#signupUsername {
+    width: 50%;
+}
+
+#email {
+    width: 50%;
+}
+
+#signupPwd {
+    width: 50%;
+}
+
+.error-text {
+    font-size: 5vw;
+}
+
+#btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+#signup-btn {
+    padding: 0;
+    width: 50%;
+    height: 2vh;
+    font-size: 2vw;
+}

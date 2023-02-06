@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../utils/mutations";
 import Auth from "../utils/auth";
+import './Signup.css'
 
 export default function Signup(props) {
     const [formState, setFormState] = useState({ username: "", email: "", password: "" });
@@ -40,10 +41,10 @@ export default function Signup(props) {
 
     return (
         <div className="container my-1">
-            <form onSubmit={handleFormSubmit}>
+            <form className="form-title" onSubmit={handleFormSubmit}>Signup
                 <div className="flex-row space-between my-2">
                     <label htmlFor="username">username:</label>
-                    <input
+                    <input className="input-field"
                         value={formState.username}
                         placeholder="Enter Username"
                         name="username"
@@ -56,7 +57,7 @@ export default function Signup(props) {
 
                 <div className="flex-row space-between my-2">
                     <label htmlFor="email">Email:</label>
-                    <input
+                    <input className="input-field"
                         value={formState.email}
                         placeholder="youremail@test.com"
                         name="email"
@@ -68,7 +69,7 @@ export default function Signup(props) {
 
                 <div className="flex-row space-between my-2">
                     <label htmlFor="password">Password:</label>
-                    <input
+                    <input className="input-field"
                         value={formState.password}
                         placeholder="******"
                         name="password"
@@ -82,8 +83,8 @@ export default function Signup(props) {
                         <p className="error-text">The provided credentials are incorrect</p>
                     </div>
                 ) : null}
-                <div className="flex-row flex-end">
-                    <button type="submit">Submit</button>
+                <div id="btn-container" className="flex-row flex-end">
+                    <button id="signup-btn" type="submit">Sign up!</button>
                 </div>
             </form>
         </div>
