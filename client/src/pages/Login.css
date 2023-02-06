@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-title {
+    color: rgb(16, 214, 69);
+    width: 100%;
+    font-size: 6.66vw;
+    padding: 0;
+}
+
+.flex-row {
+    width: 100vw;
+    color: rgb(210, 21, 21);
+}
+
+.input-field {
+    width: 100vw;
+    text-align: center;
+}
+
+#username {
+    width: 50%;
+}
+
+#pwd {
+    width: 50%;
+}
+
+.error-text {
+    font-size: 5vw;
+}
+
+#btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+#login-btn {
+    padding: 0;
+    width: 50%;
+    height: 2vh;
+    font-size: 2vw;
+}

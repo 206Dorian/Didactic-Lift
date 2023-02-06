@@ -28,6 +28,12 @@ container {
 
 } */
 
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
 div#header {
   display: flex-box;
   flex-direction: row-reverse;
