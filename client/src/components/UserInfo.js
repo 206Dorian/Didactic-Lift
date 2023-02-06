@@ -38,6 +38,7 @@ export default function UserInfo(props) {
     <div className="user-container">
       <form onSubmit={handleUserUpdate}>
         <h2> Welcome {Auth.getProfile().data.username}! </h2>
+        <h3> age:{Auth.getProfile().data.age} </h3>
         <label>Age: </label>
         <input name="age" value={userData.age} onChange={handleChange}placeholder="Input your age" />
         <label>Height: </label>
