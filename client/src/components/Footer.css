@@ -172,7 +172,7 @@
       flex-direction: row;
       justify-content: space-between;
       text-align: left;
-      font-size: 0.813rem;
+      font-size: 0.9rem;
       padding: 0 5rem;
     }
     .footer-bottom-container {
@@ -184,7 +184,11 @@
       padding: 0 0 0 1rem;
     }
     .footer-list {
-    max-width: 100px;
+    max-width: 150px;
+    font-weight: 600;
+    }
+    #carbon {
+      max-width: 170px;
     }
   }
   

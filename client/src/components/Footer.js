@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
           <div className="footer-section">
             <h2 className="footer-category">🌎</h2>
-            <nav className="footer-list">
+            <nav id="carbon" className="footer-list">
               <li>
                 <a
                   href="https://climate.stripe.com/S2RQQU"

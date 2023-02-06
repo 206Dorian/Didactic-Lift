@@ -5,7 +5,7 @@ import headerLogo from "../assets/transparent-full-logo-did-lift.png";
 export default function Header() {
   return (
     <>
-      <img src={headerLogo} alt="Didactic Lift header logo" className="header-logo"></img>
+      <a href="https://didactic-lift.herokuapp.com"><img src={headerLogo} alt="Didactic Lift header logo" className="header-logo"></img></a>
     </>
   );
 }
