@@ -7,7 +7,7 @@ body {
 
 
 container {
-position: relative;
+  position: relative;
 }
 
 
@@ -28,6 +28,22 @@ position: relative;
 
 } */
 
+div#header {
+  display: flex-box;
+  flex-direction: row-reverse;
+  padding: 50px;
+  background-color: rgb(173, 176, 178);
+  box-sizing: border-box 30px;
+  /* border: 10px solid rgb(10, 57, 98); */
+  font-size: 40px;
+  text-align: center;
+  display: center;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  padding: 40px;
+}
+
 div#root {
   display: flex-box;
   flex-direction: row-reverse;
@@ -39,7 +55,7 @@ div#root {
   text-align: center;
   display: center;
   margin: auto;
-  width: 60%;
+  width: 55%;
   height: 60%;
   padding: 50px;
 }
@@ -59,21 +75,25 @@ form {
   height: 60%;
   padding: 50px;
 
-} 
+}
 
-p { 
+p {
   color: #f5f1f1;
-} 
+}
 
 button {
-  display: inline-block;
-  background: rgb(70, 70, 74);
+  display: flex;
+  text-align: center;
+  background-color: rgb(70, 70, 74);
   color: #ffffff;
+
   padding: 80px 80px;
   margin: 20px 0px;
+
   border-radius: 30px;
   transition: background 0.5s;
- 
+  font-size: 20px;
+
 }
 
 button:active {
@@ -86,7 +106,7 @@ btn:active {
 }
 
 
-btn {
+/* btn {
   display: inline-block;
   background: rgb(9, 9, 101);
   color: #ffffff;
@@ -99,12 +119,12 @@ btn {
 
 btn:active {
   cursor: wait;
-}
+} */
 
-btn:hover,
+/* btn:hover,
 btn:active {
   background: rgb(89, 176, 213);
-}
+} */
 
 container {
 
@@ -160,7 +180,7 @@ form .btn:focus {
     margin-top: -60px;
   }
 
-  .small-container {
+  /* .small-container {
     max-width: 600px;
     margin: auto;
     padding-left: 25px;
@@ -174,7 +194,7 @@ form .btn:focus {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 90px;
-  }
+  } */
 
   .small-container-3 {
     max-width: 600px;
@@ -223,17 +243,19 @@ form .btn:focus {
   }
 
 
-
-
   #relative-positioning {
     position: relative;
     top: 80px;
+  }
+
+  .mobile-break1 {
+    text-align:center;
   }
 }
 
 /* Devices Between 600px and 820px */
 
-@media only screen and (max-width: 820px) and (min-width: 600px) {
+@media only screen and (max-width: 820px) and (min-width: 700px) {
   .col-4 {
     min-width: none;
     max-width: 400px;
@@ -249,19 +271,19 @@ form .btn:focus {
     margin-top: 20px;
   }
 
-  .col-1,
+  /* .col-1,
   .col-2,
   .col-3,
   .col-4 {
     flex-basis: 100%;
-  }
+  } */
 
   .row {
     text-align: center;
   }
 }
 
-@media only screen and (max-width: 600px) and (min-width: 550px) {
+@media only screen and (max-width: 700px) and (min-width: 600px) {
   .footer-col1 {
     margin-top: 12px;
   }
