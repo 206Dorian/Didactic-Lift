@@ -1,20 +1,14 @@
 import React, { useState } from "react";
+import { UPDATE_USER, DELETE_USER } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
 
-import { UPDATE_USER, DELETE_USER } from "../utils/mutations";
 
-export default function UserInfo() {
+export default function UserInfo(props) {
 
   const [updateFormState, setUpdateFormState] = useState([]);
 
-  const updateUser = useMutation(UPDATE_USER);
-
   const deleteUser = useMutation(DELETE_USER);
-
-
-
-export default function UserInfo (props) {
 
   const [userData, setUserData] = useState({age:"", height:"", weight:""});
   const [updateUser, { error }] = useMutation(UPDATE_USER);
