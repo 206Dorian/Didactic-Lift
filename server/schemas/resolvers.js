@@ -50,9 +50,14 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    updateUser: async (parent, { username, height, weight, age }) => {
-      const user = await User.findOneAndUpdate({ username })
+    updateUser: async (parent, { height, weight, age }, context) => {
+      if(context.user) {
+        const user = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $set: { age: age, height:height, weight:weight }},
+          { new: true })
       return user;
+      }
     },
 
     deleteUser: async (parent, username) => {
