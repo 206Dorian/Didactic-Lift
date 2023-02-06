@@ -86,9 +86,10 @@ button {
   text-align: center;
   background-color: rgb(70, 70, 74);
   color: #ffffff;
-  padding: 30px 60px;
-  border: 10px black;
-  margin: 30px 60px;
+
+  padding: 80px 80px;
+  margin: 20px 0px;
+
   border-radius: 30px;
   transition: background 0.5s;
   font-size: 20px;
