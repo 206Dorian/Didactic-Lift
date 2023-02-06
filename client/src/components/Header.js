@@ -1,9 +1,11 @@
+import React from "react";
+import "./Header.css"
+import headerLogo from "../assets/transparent-full-logo-did-lift.png";
+
 export default function Header() {
   return (
     <>
-      <div>
-        <h1>🦾 DIDACTIC LIFT🦾</h1>
-      </div>
+      <img src={headerLogo} alt="Didactic Lift header logo" className="header-logo"></img>
     </>
   );
 }

@@ -1,7 +1,6 @@
 
 .logo {
-    height: 38px;
-    width: 38px;
+    width: 13rem;
     margin-right: 0.4rem;
   }
   
@@ -54,15 +53,20 @@
   }
   
   .footer-title img {
-    background-color: rgb(238, 238, 238);
     padding: 0.5rem;
-    border-radius: 50%;
+    padding-left: 1rem;
   }
   
   .footer-tagline {
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: rgb(238, 238, 238);
+    cursor: default;
+  }
+
+  #flipped {
+    transform: scale(-1, 1);
+    display: inline-flex;
   }
   
   .footer-section-wrapper {
@@ -87,6 +91,7 @@
     text-transform: uppercase;
     margin-bottom: 0.75rem;
     color: rgb(238, 238, 238);
+    cursor: default;
   }
   
   .footer-list {
@@ -126,6 +131,7 @@
     line-height: 1.25rem;
     text-align: center;
     color: rgb(238, 238, 238);
+    cursor: default;
   }
   
   .footer-social {
@@ -156,6 +162,11 @@
     .footer-title {
       justify-content: flex-start;
       padding-left: 1.95rem;
+    }
+    .footer-title img {
+        padding: 0.5rem;
+        position: relative;
+        right: 0.9rem;
     }
     .footer-section-wrapper {
       flex-direction: row;
