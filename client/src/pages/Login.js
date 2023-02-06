@@ -30,6 +30,7 @@ export default function Login(props) {
   };
 
   return (
+    <>
     <div className="container my-1">
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
@@ -62,6 +63,8 @@ export default function Login(props) {
         </div>
       </form>
     </div>
+    </>
+    
   );
 }
 
