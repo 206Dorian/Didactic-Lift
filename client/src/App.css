@@ -32,16 +32,16 @@ div#header {
   display: flex-box;
   flex-direction: row-reverse;
   padding: 50px;
-  background-color: rgb(173, 176, 178);
+  background-color: rgb(233, 238, 240);
   box-sizing: border-box 30px;
-  /* border: 10px solid rgb(10, 57, 98); */
+  border: 10px solid rgb(10, 57, 98);
   font-size: 40px;
   text-align: center;
   display: center;
   margin: auto;
-  width: 40%;
-  height: 40%;
-  padding: 40px;
+  width: 70%;
+  height: 50%;
+  padding: 20px;
 }
 
 div#root {
@@ -67,7 +67,7 @@ form {
   background-color: rgb(74, 97, 108);
   box-sizing: border-box 30px;
   border: 10px solid rgb(10, 57, 98);
-  font-size: 40px;
+  font-size: 33px;
   text-align: center;
   display: center;
   margin: auto;
@@ -82,13 +82,13 @@ p {
 }
 
 button {
-  display: flex;
+  display: inline-flex;
   text-align: center;
   background-color: rgb(70, 70, 74);
   color: #ffffff;
 
-  padding: 80px 80px;
-  margin: 20px 0px;
+  padding: 15px 50px;
+  margin: 10px 10px;
 
   border-radius: 30px;
   transition: background 0.5s;
