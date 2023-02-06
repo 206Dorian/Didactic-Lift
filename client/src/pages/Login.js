@@ -34,7 +34,7 @@ export default function Login(props) {
     <div className="container my-1">
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
-          <label htmlFor="username">username:</label>
+          <label htmlFor="username">Username:</label>
           <input
             placeholder="Enter Username"
             name="username"
@@ -55,7 +55,7 @@ export default function Login(props) {
         </div>
         {error ? (
           <div>
-            <p className="error-text">The provided credentials are incorrect</p>
+            {/* <p className="error-text">The provided credentials are incorrect</p> */}
           </div>
         ) : null}
         <div className="flex-row flex-end">
