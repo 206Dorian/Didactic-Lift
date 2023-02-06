@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
+import Auth from '../utils/auth';
 
 import { UPDATE_USER } from '../utils/mutations';
 import { DELETE_USER } from '../utils/mutations';
 
 
-export default function UserInfo(props) {
-
-    const {user, setUser } = useState()
-
+export default function UserInfo (props) {
+   
   return (
     <div className="user-container">
       <form>
-        <h2> Welcome User</h2>
+        <h2> Welcome {Auth.getProfile().data.username}! </h2>
         <label>Age: </label>
         <input placeholder="Input your age" />
         <label>Height: </label>
@@ -23,7 +22,6 @@ export default function UserInfo(props) {
         <button className="user-button">Delete User</button>
         <button className="user-button">Update User</button>
       </form>
-      {/* Render User info */}
     </div>
   );
 }
