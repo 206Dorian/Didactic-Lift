@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
-import Auth from '../utils/auth';
+import React, { useState } from "react";
+import { useMutation } from "@apollo/client";
+import Auth from "../utils/auth";
 
-import { UPDATE_USER } from '../utils/mutations';
-import { DELETE_USER } from '../utils/mutations';
+import { UPDATE_USER, DELETE_USER } from "../utils/mutations";
+
+export default function UserInfo() {
+
+  const [updateFormState, setUpdateFormState] = useState([]);
+
+  const updateUser = useMutation(UPDATE_USER);
+
+  const deleteUser = useMutation(DELETE_USER);
 
 
 
