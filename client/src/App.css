@@ -28,6 +28,12 @@ position: relative;
 
 } */
 
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 div#root {
   display: flex-box;
   flex-direction: row-reverse;
