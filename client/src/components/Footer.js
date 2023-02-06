@@ -9,7 +9,8 @@ export default function Footer() {
           <div className="footer-title">
             <img src={myLogo} alt="didactic-lift logo" className="logo"></img>
           </div>
-          <p className="footer-tagline">🦾We hope this *Lifted* your spirits!<div id="flipped">🦾</div></p>
+          <p className="footer-tagline">🦾We hope this *Lifted* your spirits!<var id="flipped">🦾</var></p>
+          {/* using the var element tag prevents errors, certain tags like div cant (or shouldnt be) be nested in a p tag. */}
         </div>
         <div className="footer-section-wrapper">
           <div className="footer-section">
