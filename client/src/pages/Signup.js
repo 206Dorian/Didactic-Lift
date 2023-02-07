@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../utils/mutations";
 import Auth from "../utils/auth";
-import './Signup.css'
+
 
 export default function Signup(props) {
     const [formState, setFormState] = useState({ username: "", email: "", password: "" });
@@ -44,7 +44,7 @@ export default function Signup(props) {
         <div className="container my-1">
             <form className="form-title" onSubmit={handleFormSubmit}>Signup
                 <div className="flex-row space-between my-2">
-                    <label htmlFor="username">username:</label>
+                    <label htmlFor="username">Username:</label>
                     <input className="input-field"
                         value={formState.username}
                         placeholder="Enter Username"

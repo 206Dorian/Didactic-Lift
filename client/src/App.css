@@ -11,29 +11,6 @@ container {
 }
 
 
-/* div {
-  display: flex-box;
-  flex-direction: row-reverse;
-  padding: 50px;
-  background-color: rgb(74, 97, 108);
-  box-sizing: border-box 30px;
-  border: 10px solid rgb(10, 57, 98);
-  font-size: 40px;
-  text-align: center;
-  display: center;
-  margin: auto;
-  width: 60%;
-  height: 60%;
-  padding: 50px;
-
-} */
-
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-  
 div#header {
   display: flex-box;
   flex-direction: row-reverse;
@@ -88,13 +65,17 @@ p {
 }
 
 button {
-  display: inline-flex;
+
+  display: flex-box;
+
   text-align: center;
   background-color: rgb(70, 70, 74);
   color: #ffffff;
 
+
   padding: 15px 50px;
   margin: 10px 10px;
+
 
   border-radius: 30px;
   transition: background 0.5s;
