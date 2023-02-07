@@ -3,6 +3,8 @@ import { UPDATE_USER, DELETE_USER } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
 import "./UserInfo.css";
+import Delete from "./Delete";
+
 
 export default function UserInfo(props) {
   const [updateFormState, setUpdateFormState] = useState([]);
@@ -83,7 +85,8 @@ export default function UserInfo(props) {
           <button onSubmit={handleUserUpdate} className="user-button">
             Update User
           </button>
-          <button id="delete-btn" className="user-button">Delete User</button>
+          <Delete/>
+          
       </form>
     </div>
   );
