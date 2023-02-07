@@ -1,7 +1,8 @@
 
 .logo {
-    width: 13rem;
-    margin-right: 0.4rem;
+    width: 10rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 2.5vw / 25%;
   }
   
   a {
@@ -151,6 +152,9 @@
   }
   
   @media only screen and (min-width: 700px) {
+    .logo {
+      border-radius: 1.5vw / 35%;
+    }
     .footer-container {
       flex-direction: row;
       padding: 3rem 2rem;
@@ -162,7 +166,7 @@
     }
     .footer-title {
       justify-content: flex-start;
-      padding-left: 1.95rem;
+      padding-left: 3.4rem;
     }
     .footer-title img {
         padding: 0.5rem;

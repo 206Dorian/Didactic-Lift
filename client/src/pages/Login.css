@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-title {
+    color: rgb(238, 238, 238);
+    width: 100%;
+    font-size: 6.66vw;
+    padding: 0;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    color: rgb(30, 50, 100);
+    margin: 1rem 0;
+}
+
+.input-field {
+    height: calc(1px + 2vh);
+    text-align: center;
+}
+
+#username {
+    width: 50%;
+}
+
+#pwd {
+    width: 50%;
+}
+
+.error-text {
+    font-size: 5vw;
+}
+
+#btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+#login-btn {
+    padding: 0;
+    width: 50%;
+    height: 2.5vh;
+    font-size: 2vw;
+}
+
