@@ -1,7 +1,7 @@
 import { useQuery } from "@apollo/client";
 import { useState } from "react";
 import axios from "axios";
-const APIKey = process.env.APIKEY;
+
 
 export default function Workout() {
 
@@ -11,7 +11,7 @@ export default function Workout() {
   //   setMuscleGroup(event.target.value);
   // };
   const handleFormSubmit = async (muscleGroup) => {
-    // require('dotenv').config();
+   
     // event.preventDefault()
     setMuscleGroup(muscleGroup);
     console.log(muscleGroup);
