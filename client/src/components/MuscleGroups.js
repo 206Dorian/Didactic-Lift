@@ -1,17 +1,14 @@
 import { useQuery } from "@apollo/client";
 import { useState } from "react";
 import axios from "axios";
-
+import "./MuscleGroups.css";
 
 export default function Workout() {
-
-
   const [muscleGroup, setMuscleGroup] = useState("");
   // const handleChange = (event) => {
   //   setMuscleGroup(event.target.value);
   // };
   const handleFormSubmit = async (muscleGroup) => {
-   
     // event.preventDefault()
     setMuscleGroup(muscleGroup);
     console.log(muscleGroup);
@@ -35,54 +32,48 @@ export default function Workout() {
   return (
     <>
       <div className="dropDownBtns">
-        <button
-          onClick={() => handleFormSubmit("abdominals")}
-          data-value="abdominals"
-        >
-          abdominals
+        
+        <button onClick={() => handleFormSubmit("abdominals")}>
+          Abdominals
         </button>
 
-        <button onClick={() => handleFormSubmit("abductors")}>
-          abductors{" "}
-        </button>
+        <button onClick={() => handleFormSubmit("abductors")}>Abductors</button>
 
-        <button onClick={() => handleFormSubmit("adductors")}>
-          adductors{" "}
-        </button>
+        <button onClick={() => handleFormSubmit("adductors")}>Adductors</button>
 
-        <button onClick={() => handleFormSubmit("biceps")}>biceps</button>
+        <button onClick={() => handleFormSubmit("biceps")}>Biceps</button>
 
-        <button onClick={() => handleFormSubmit("calves")}>calves</button>
+        <button onClick={() => handleFormSubmit("calves")}>Calves</button>
 
-        <button onClick={() => handleFormSubmit("chest")}>chest</button>
+        <button onClick={() => handleFormSubmit("chest")}>Chest</button>
 
-        <button onClick={() => handleFormSubmit("forearms")}>forearms</button>
+        <button onClick={() => handleFormSubmit("forearms")}>Forearms</button>
 
-        <button onClick={() => handleFormSubmit("glutes")}>glutes</button>
+        <button onClick={() => handleFormSubmit("glutes")}>Glutes</button>
 
         <button onClick={() => handleFormSubmit("hamstrings")}>
-          hamstrings
+          Hamstrings
         </button>
 
-        <button onClick={() => handleFormSubmit("lats")}>lats</button>
+        <button onClick={() => handleFormSubmit("lats")}>Lats</button>
 
         <button onClick={() => handleFormSubmit("lower_back")}>
-          lower_back
+          Lower Back
         </button>
 
-        <button onClick={() => handleFormSubmit("midde_back")}>
-          middle_back
+        <button onClick={() => handleFormSubmit("middle_back")}>
+          Middle Back
         </button>
 
-        <button onClick={() => handleFormSubmit("neck")}>neck</button>
+        <button onClick={() => handleFormSubmit("neck")}>Neck</button>
 
         <button onClick={() => handleFormSubmit("quadriceps")}>
-          quadriceps
+          Quadriceps
         </button>
 
-        <button onClick={() => handleFormSubmit("traps")}>traps</button>
+        <button onClick={() => handleFormSubmit("traps")}>Traps</button>
 
-        <button onClick={() => handleFormSubmit("triceps")}>triceps</button>
+        <button onClick={() => handleFormSubmit("triceps")}>Triceps</button>
       </div>
     </>
   );

@@ -27,7 +27,12 @@ export const DELETE_USER = gql`
 `
 
 export const UPDATE_USER = gql`
-  mutation updateUser($username: String, $age: String, $height: String, $weight: String) {
-    updateUser(age: $age, height: $height, weight: $weight)
+  mutation updateUser($age: String!, $height: String!, $weight: String!) {
+    updateUser(age: $age, height: $height, weight: $weight) {
+      _id
+      age
+      height
+      weight
     }
+  }
 `
