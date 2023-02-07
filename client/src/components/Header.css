@@ -1,3 +1,15 @@
+:root {
+    --chiliRed: #d64933;
+    --deepBlue: #003c53;
+    --deepPurp: #242038;
+    --greenBlue: #2364aa;
+    --liteBlue: #3da5d9;
+    --litePink: #eee5e9;
+    --mikado: #fec601;
+    --pumpkin: #ea7317;
+    --verdigris: #73bfb8;
+  }
+
 .logo-container {
     background-color: rgb(240, 240, 240);
     border-radius: 4vw / 25%;
