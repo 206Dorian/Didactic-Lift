@@ -1,8 +1,13 @@
 .user-container {
   display: flex;
-  color: rgb(238, 238, 238);
   flex-direction: column;
+  color: rgb(238, 238, 238);
   width: 70vw;
+}
+
+.halfsies {
+  display: flex;
+  flex-direction: column;
 }
 
 .user-welcome {
@@ -12,9 +17,15 @@
 }
 
 .user-age {
-    font-size: 5vw;
+  font-size: 3vw;
   position: relative;
-  bottom: 3.5rem;
+  bottom: calc(4rem - 1.5vw);
+}
+
+.input-container {
+    width: 40vw;
+    max-width: 570px;
+    margin: 0 auto;
 }
 
 .input-label {
@@ -22,18 +33,41 @@
   bottom: 3.5rem;
   font-size: 1.125rem;
   font-weight: 600;
+  line-height: 3.5rem;
   align-items: left;
 }
 
 .input {
   font-size: 3vw;
+  text-align: center;
   position: relative;
-  bottom: 4.5rem;
+  bottom: calc(4.5rem - 1vw);
+  max-width: 570px;
 }
 
 .ice-breaker {
-    font-size: 0.75rem;
+  font-size: 1.5vw;
+  color: rgb(89, 176, 213);
+  position: relative;
+  bottom: calc(4rem - 2vw);
+}
+
+.user-button {
+    margin: 0.5rem auto;
+    width: 30vw;
     position: relative;
-    bottom: 2.5rem;
+    bottom: 1rem;
+    font-size: calc(0.9rem + 0.75vw);
+    color: black;
+    background-color: rgb(238, 238, 238);
+}
+
+.user-button:hover {
+    color: rgb(238, 238, 238);
+    background-color: rgb(89, 176, 213);
+}
+
+#delete-btn:hover {
+    background-color: rgb(190, 0, 0);
 }
 
