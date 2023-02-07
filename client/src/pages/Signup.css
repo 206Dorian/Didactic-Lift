@@ -53,12 +53,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50%;
 }
 
 #signup-btn {
     padding: 0;
     width: 50%;
-    height: 2.5vh;
+    height: calc(0.38rem + 2.5vw);
     font-size: 2vw;
 }
