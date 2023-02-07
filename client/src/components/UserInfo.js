@@ -21,6 +21,8 @@ export default function UserInfo(props) {
 
     try {
       await updateUser({ variables: { ...userData } });
+
+      window.location.reload()
     } catch (err) {
       console.error(err);
     }
