@@ -19,7 +19,7 @@ export default function UserInfo(props) {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
 
     try {
-      await updateUser(userData, token);
+      await updateUser({variables: { ...userData }});
     } catch (err) {
       console.error(err);
     }
