@@ -13,22 +13,6 @@ body {
 }
 
 
-/* div#header {
-  display: flex-box;
-  flex-direction: row-reverse;
-  padding: 50px;
-  background-color: rgb(233, 238, 240);
-  box-sizing: border-box 30px;
-  border: 10px solid rgb(10, 57, 98);
-  font-size: 40px;
-  text-align: center;
-  display: center;
-  margin: auto;
-  width: 100%;
-  height: 50%;
-  padding: 20px;
-} */
-
 div#root {
   display: flex-box;
   flex-direction: row-reverse;
@@ -59,7 +43,6 @@ form {
   width: 60%;
   height: 60%;
   padding: 50px;
-
 }
 
 p {
@@ -74,14 +57,8 @@ button {
   background-color: rgb(70, 70, 74);
   color: #ffffff;
 
-
-  /* padding: 15px 50px; */
-  /* margin: 10px 10px; */
-
-
   border-radius: 30px;
   transition: background 0.5s;
-  font-size: 20px;
 
 }
 
@@ -93,27 +70,6 @@ button:hover,
 btn:active {
   background: rgb(89, 176, 213);
 }
-
-
-/* btn {
-  display: inline-block;
-  background: rgb(9, 9, 101);
-  color: #ffffff;
-  padding: 20px 30px;
-  margin: 30px 50px;
-  border-radius: 30px;
-  transition: background 0.5s;
-
-}
-
-btn:active {
-  cursor: wait;
-} */
-
-/* btn:hover,
-btn:active {
-  background: rgb(89, 176, 213);
-} */
 
 container {
 
@@ -169,21 +125,6 @@ form .btn:focus {
     margin-top: -60px;
   }
 
-  /* .small-container {
-    max-width: 600px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 90px;
-  }
-
-  .small-container-2 {
-    max-width: 600px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 90px;
-  } */
 
   .small-container-3 {
     max-width: 600px;
@@ -259,13 +200,6 @@ form .btn:focus {
     margin-right: auto;
     margin-top: 20px;
   }
-
-  /* .col-1,
-  .col-2,
-  .col-3,
-  .col-4 {
-    flex-basis: 100%;
-  } */
 
   .row {
     text-align: center;

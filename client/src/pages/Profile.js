@@ -10,6 +10,7 @@ export default function Profile() {
     <>
     {Auth.loggedIn() ? (
       <div>
+        <br></br>
         <div>
         <UserInfo />
       </div>
