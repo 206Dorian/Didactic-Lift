@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { UPDATE_USER, DELETE_USER } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
-
+import './UserInfo.css';
 
 export default function UserInfo(props) {
 
@@ -16,7 +16,7 @@ export default function UserInfo(props) {
   const handleUserUpdate = async (event) => {
     event.preventDefault();
 
-    const token = Auth.loggedIn() ? Auth.getToken() : null;
+    // const token = Auth.loggedIn() ? Auth.getToken() : null;
 
     try {
       await updateUser({variables: { ...userData }});
@@ -31,20 +31,28 @@ export default function UserInfo(props) {
     // if (name === "age") {
       setUserData({ ...userData, [name]: value});
     // }
-    console.log(userData);
+    console.log(Auth.getProfile().data);
   }
+
+
+  // this is not quire working at this point
+  let userAge = userData.age;
    
   return (
     <div className="user-container">
       <form onSubmit={handleUserUpdate}>
-        <h2> Welcome {Auth.getProfile().data.username}! </h2>
-        <h3> age:{Auth.getProfile().data.age} </h3>
-        <label>Age: </label>
-        <input name="age" value={userData.age} onChange={handleChange}placeholder="Input your age" />
-        <label>Height: </label>
-        <input name="height" value={userData.height} onChange={handleChange} placeholder="How tall are you?" />
-        <label>Weight: </label>
-        <input name="weight" value={userData.weight} onChange={handleChange} placeholder="How much do you weigh?" />
+        <h2 className="user-welcome"> Welcome<br></br>{Auth.getProfile().data.username}! </h2>
+        {userAge ? (
+        <h3 className="user-age"> You're {Auth.getProfile().data.age} years old</h3>
+        ) : (
+          <h3 className="ice-breaker">We should get to know each other better:</h3>
+        )}
+        <label className="input-label">Age: </label>
+        <input className="input" name="age" value={userData.age} onChange={handleChange}placeholder="Input your age" />
+        <label className="input-label">Height: </label>
+        <input className="input" name="height" value={userData.height} onChange={handleChange} placeholder="How tall are you?" />
+        <label className="input-label">Weight: </label>
+        <input className="input" name="weight" value={userData.weight} onChange={handleChange} placeholder="How much do you weigh?" />
         {/* <button className="user-button">Delete User</button> */}
         <button onSubmit={handleUserUpdate} className="user-button">Update User</button>
       </form>

@@ -1,0 +1,39 @@
+.user-container {
+  display: flex;
+  color: rgb(238, 238, 238);
+  flex-direction: column;
+  width: 70vw;
+}
+
+.user-welcome {
+  font-size: 5vw;
+  position: relative;
+  bottom: 3.5rem;
+}
+
+.user-age {
+    font-size: 5vw;
+  position: relative;
+  bottom: 3.5rem;
+}
+
+.input-label {
+  position: relative;
+  bottom: 3.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  align-items: left;
+}
+
+.input {
+  font-size: 3vw;
+  position: relative;
+  bottom: 4.5rem;
+}
+
+.ice-breaker {
+    font-size: 0.75rem;
+    position: relative;
+    bottom: 2.5rem;
+}
+
