@@ -32,10 +32,7 @@ export default function Workout() {
   return (
     <>
       <div className="dropDownBtns">
-        
-        <button onClick={() => handleFormSubmit("abdominals")}>
-          Abdominals
-        </button>
+        <button onClick={() => handleFormSubmit("abdominals")}>Abdominals</button>
 
         <button onClick={() => handleFormSubmit("abductors")}>Abductors</button>
 
@@ -51,25 +48,17 @@ export default function Workout() {
 
         <button onClick={() => handleFormSubmit("glutes")}>Glutes</button>
 
-        <button onClick={() => handleFormSubmit("hamstrings")}>
-          Hamstrings
-        </button>
+        <button onClick={() => handleFormSubmit("hamstrings")}>Hamstrings</button>
 
         <button onClick={() => handleFormSubmit("lats")}>Lats</button>
 
-        <button onClick={() => handleFormSubmit("lower_back")}>
-          Lower Back
-        </button>
+        <button onClick={() => handleFormSubmit("lower_back")}>Lower Back</button>
 
-        <button onClick={() => handleFormSubmit("middle_back")}>
-          Middle Back
-        </button>
+        <button onClick={() => handleFormSubmit("middle_back")}>Middle Back</button>
 
         <button onClick={() => handleFormSubmit("neck")}>Neck</button>
 
-        <button onClick={() => handleFormSubmit("quadriceps")}>
-          Quadriceps
-        </button>
+        <button onClick={() => handleFormSubmit("quadriceps")}>Quadriceps</button>
 
         <button onClick={() => handleFormSubmit("traps")}>Traps</button>
 
