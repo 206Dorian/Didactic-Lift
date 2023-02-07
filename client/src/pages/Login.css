@@ -18,7 +18,7 @@
 }
 
 .form-title {
-    color: rgb(238, 238, 238);
+    color: var(--deepPurp);
     width: 100%;
     font-size: 6.66vw;
     padding: 0;
@@ -37,6 +37,9 @@
     height: calc(1px + 2vw);
     font-size: calc(5px + 1vw);
     text-align: center;
+    margin-left: 0.5rem;
+    position: relative;
+    top: calc(0rem + 0.5vw);
 }
 
 #username {
@@ -58,6 +61,7 @@
 }
 
 #login-btn {
+    margin: calc(0rem + 0.9vw) 0;
     padding: 0;
     width: 50%;
     height: calc(0.38rem + 2.5vw);

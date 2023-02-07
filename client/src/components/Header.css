@@ -11,7 +11,7 @@
   }
 
 .logo-container {
-    background-color: rgb(240, 240, 240);
+    background-color: var(--litePink);
     border-radius: 4vw / 25%;
 }
 

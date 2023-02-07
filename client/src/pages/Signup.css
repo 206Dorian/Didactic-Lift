@@ -28,10 +28,6 @@
     font-size: 4vw;
 }
 
-/* .input-field {
-    height: 2vh;
-    text-align: center;
-} */
 
 #signupUsername {
     width: 50%;
@@ -56,6 +52,7 @@
 }
 
 #signup-btn {
+    margin: 1rem 0;
     padding: 0;
     width: 50%;
     height: calc(0.38rem + 2.5vw);

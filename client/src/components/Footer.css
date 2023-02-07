@@ -13,7 +13,7 @@
 
 .logo {
     width: 10rem;
-    background-color: rgb(240, 240, 240);
+    background-color: var(--litePink);
     border-radius: 2.5vw / 25%;
   }
   
@@ -22,15 +22,15 @@
   }
   
   a:link {
-    color: rgb(3, 65, 147);
+    color: var(--deepBlue);
   }
   
   a:visited {
-    color: rgb(133, 34, 128);
+    color: #4d0090;
   }
   
   a:hover {
-    color: rgb(253, 168, 31);
+    color: var(--pumpkin);
   }
   
   .footer-container {
@@ -57,7 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(238, 238, 238);
+    color: var(--litePink);
     text-decoration: none;
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -73,7 +73,7 @@
   .footer-tagline {
     font-size: 0.875rem;
     line-height: 1.25rem;
-    color: rgb(238, 238, 238);
+    color: var(--litePink);
     cursor: default;
   }
 
@@ -103,7 +103,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 0.75rem;
-    color: rgb(238, 238, 238);
+    color: var(--litePink);
     cursor: default;
   }
   
@@ -122,7 +122,7 @@
   .footer-bottom {
     background-color: rgb(10, 10, 10);
     border-radius: 5%;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
     margin-top: 1.5rem;
   }
   
@@ -143,7 +143,7 @@
     font-size: 0.781rem;
     line-height: 1.25rem;
     text-align: center;
-    color: rgb(238, 238, 238);
+    color: var(--litePink);
     cursor: default;
   }
   
@@ -153,14 +153,15 @@
     column-gap: 1rem;
   }
   
-  .footer-social-icon {
-    color: rgb(255, 255, 255);
-    padding: 0;
-  }
-  
   .footer-social-icon svg {
     width: 5rem;
     height: 5rem;
+    color: var(--litePink);
+    transition: 0.5s;
+  }
+
+  .footer-social-icon svg:hover {
+    color: var(--chiliRed);
   }
   
   @media only screen and (min-width: 700px) {

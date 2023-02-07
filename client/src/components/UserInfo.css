@@ -13,8 +13,8 @@
 .user-container {
   display: flex;
   flex-direction: column;
-  color: rgb(238, 238, 238);
-  width: 70vw;
+  color: var(--litePink);
+  width: 90vw;
 }
 
 .halfsies {
@@ -43,6 +43,7 @@
 .input-label {
   position: relative;
   bottom: 3.5rem;
+  color: var(--deepBlue);
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 3.5rem;
@@ -59,7 +60,7 @@
 
 .ice-breaker {
   font-size: 1.5vw;
-  color: rgb(89, 176, 213);
+  color: var(--mikado);
   position: relative;
   bottom: calc(4rem - 2vw);
 }
@@ -70,13 +71,13 @@
     position: relative;
     bottom: 1rem;
     font-size: calc(0.9rem + 0.75vw);
-    color: black;
-    background-color: rgb(238, 238, 238);
+    color: var(--deepBlue);
+    background-color: var(--litePink);
 }
 
 .user-button:hover {
-    color: rgb(238, 238, 238);
-    background-color: rgb(89, 176, 213);
+    color: var(--litePink);
+    background-color: var(--greenBlue);
 }
 
 #delete-btn:hover {
