@@ -42,7 +42,7 @@
         width: 70vw;
     }
     .dropDownBtns button {
-        font-size: 2vw;
+        font-size: calc(2px + 1.5vw);
         height: 12vh;
         padding: 0 calc(50px - 1vw);
     }
