@@ -1,3 +1,15 @@
+:root {
+  --chiliRed: #d64933;
+  --deepBlue: #003c53;
+  --deepPurp: #242038;
+  --greenBlue: #2364aa;
+  --liteBlue: #3da5d9;
+  --litePink: #eee5e9;
+  --mikado: #fec601;
+  --pumpkin: #ea7317;
+  --verdigris: #73bfb8;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -6,20 +18,21 @@
 }
 
 body {
-
-  color: rgb(17, 18, 18);
-  background-image: linear-gradient(black, rgb(84, 88, 89), rgb(116, 119, 119),
-      rgb(16, 16, 16));
+  background-image: linear-gradient(
+    var(--litePink),
+    var(--liteBlue),
+    rgb(116, 119, 119),
+    var(--deepPurp)
+  );
 }
-
 
 div#root {
   display: flex-box;
   flex-direction: row-reverse;
   padding: 50px;
-  background-color: rgb(74, 107, 120);
+  background-color: var(--greenBlue);
   box-sizing: border-box 30px;
-  border: 10px solid rgb(10, 57, 98);
+  border: 10px solid var(--deepBlue);
   font-size: 40px;
   text-align: center;
   display: center;
@@ -33,9 +46,9 @@ form {
   display: flex-box;
   flex-direction: row-reverse;
   padding: 50px;
-  background-color: rgb(74, 97, 108);
+  background-color: var(--liteBlue);
   box-sizing: border-box 30px;
-  border: 10px solid rgb(10, 57, 98);
+  border: 10px solid var(--deepPurp);
   font-size: 33px;
   text-align: center;
   display: center;
@@ -45,21 +58,16 @@ form {
   padding: 50px;
 }
 
-p {
-  color: #f5f1f1;
-}
-
 button {
-
   display: flex-box;
 
   text-align: center;
-  background-color: rgb(70, 70, 74);
+  color: var(--litePink);
+  background-color: var(--deepBlue);
   color: #ffffff;
 
   border-radius: 30px;
   transition: background 0.5s;
-
 }
 
 button:active {
@@ -68,11 +76,11 @@ button:active {
 
 button:hover,
 btn:active {
-  background: rgb(89, 176, 213);
+  color: var(--deepBlue);
+  background: var(--litePink);
 }
 
 container {
-
   max-width: 1000px;
   margin: auto;
   padding-left: 25px;
@@ -115,7 +123,6 @@ form .btn:focus {
   transition: transform 1s;
 }
 
-
 /* Media Query 912px & Under */
 
 @media only screen and (max-width: 912px) {
@@ -124,7 +131,6 @@ form .btn:focus {
     padding-right: 0px;
     margin-top: -60px;
   }
-
 
   .small-container-3 {
     max-width: 600px;
@@ -172,14 +178,13 @@ form .btn:focus {
     z-index: 1;
   }
 
-
   #relative-positioning {
     position: relative;
     top: 80px;
   }
 
   .mobile-break1 {
-    text-align:center;
+    text-align: center;
   }
 }
 

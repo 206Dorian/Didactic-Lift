@@ -1,3 +1,15 @@
+:root {
+    --chiliRed: #d64933;
+    --deepBlue: #003c53;
+    --deepPurp: #242038;
+    --greenBlue: #2364aa;
+    --liteBlue: #3da5d9;
+    --litePink: #eee5e9;
+    --mikado: #fec601;
+    --pumpkin: #ea7317;
+    --verdigris: #73bfb8;
+  }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -16,10 +28,6 @@
     font-size: 4vw;
 }
 
-/* .input-field {
-    height: 2vh;
-    text-align: center;
-} */
 
 #signupUsername {
     width: 50%;
@@ -41,12 +49,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50%;
 }
 
 #signup-btn {
+    margin: 1rem 0;
     padding: 0;
     width: 50%;
-    height: 2.5vh;
+    height: calc(0.38rem + 2.5vw);
     font-size: 2vw;
 }

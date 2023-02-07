@@ -1,9 +1,21 @@
+:root {
+  --chiliRed: #d64933;
+  --deepBlue: #003c53;
+  --deepPurp: #242038;
+  --greenBlue: #2364aa;
+  --liteBlue: #3da5d9;
+  --litePink: #eee5e9;
+  --mikado: #fec601;
+  --pumpkin: #ea7317;
+  --verdigris: #73bfb8;
+}
+
 .exercise-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   margin: 1rem auto;
 }
 
@@ -14,44 +26,70 @@
   justify-content: center;
 }
 
-.card-header {
+.exercise-name {
+  font-size: calc(1rem + 2vw);
+  font-style: italic;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--mikado);
 
+  position: relative;
+  bottom: calc(2.5rem + 1vw);
 }
 
-.exercise-name {
-
+.card-info {
+  font-size: calc(0.75rem + 2vw);
+  color: var(--litePink);
+  position: relative;
+  bottom: calc(3.5rem + 1vw);
 }
 
 .exercise-type {
-
 }
 
 .exercise-difficulty {
-
 }
 
 .exercise-equipment {
-
 }
 
 .exercise-instructions {
-    font-size: 1rem;
-    line-height: 1.38;
+  font-size: calc(0.69rem + 1vw);
+  line-height: 1.38;
 
-    padding: 1rem;
-    height: 12rem;
-    width: 45vw;
-    overflow: auto;
+  padding: 1rem;
+  height: 15rem;
+  width: 50vw;
+  overflow: auto;
 
-    background-color: rgb(44, 107, 93);
-    color: rgb(238, 238, 238)
-};
-
-
-
-#back-btn {
-    height: 6rem;
-    font-size: 3vw;
-    background-color: rgb(40, 60, 120);
+  background-color: var(--verdigris);
+  color: var(--deepBlue);
 }
 
+#back-btn {
+    margin: 2rem 0;
+  height: 2rem;
+  width: calc(4rem + 5vw);
+  font-size: calc(0.5rem + 1vw);
+  color: var(--verdigris);
+  background-color: var(--deepPurp);
+  transition: 0.5s;
+}
+
+#back-btn:hover {
+    color: var(--mikado);
+    background-color: var(--liteBlue);
+}
+
+@media only screen and (min-width: 640px) and (max-width: 820px) {
+    .exercise-instructions {
+      font-size: calc(0.69rem + 0.75vw);
+    }
+  }
+
+@media only screen and (min-width: 820px) {
+  .exercise-instructions {
+    width: calc(15rem + 20vw);
+    font-size: calc(0.69rem + 0.5vw);
+  }
+}
