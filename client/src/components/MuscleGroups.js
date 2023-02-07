@@ -31,6 +31,7 @@ export default function Workout() {
   };
   return (
     <>
+    <p id="muscle-section-title">Muscle Groups</p>
       <div className="dropDownBtns">
         <button onClick={() => handleFormSubmit("abdominals")}>Abdominals</button>
 
