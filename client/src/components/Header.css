@@ -1,0 +1,11 @@
+.logo-container {
+    background-color: rgb(240, 240, 240);
+    border-radius: 4vw / 25%;
+}
+
+.header-logo {
+    width: 50vw;
+    position: relative;
+    top: 0.7vw;
+}
+
