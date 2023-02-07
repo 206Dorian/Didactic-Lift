@@ -6,11 +6,11 @@ export default function Exercise() {
   return (
     <div className="exercise-container">
       <form className="card-container">
-        <p className="exercise-name">name</p>
+        <p className="exercise-name">Kettlebell sumo deadlift high pull</p>
         <div className="card-info">
-          <p className="exercise-type">strength</p>
-          <p className="exercise-difficulty">super hard</p>
-          <p className="exercise-equipment">machine</p>
+          <p className="exercise-type">Type: (strength)</p>
+          <p className="exercise-difficulty">Difficulty: (intermediate)</p>
+          <p className="exercise-equipment">Equipment: (kettlebells)</p>
         </div>
         <div className="exercise-instructions">
           Starting position, hold your body at arm's length with your arms
@@ -29,7 +29,6 @@ export default function Exercise() {
         </div>
       </form>
       <button id="back-btn">Go back</button>
-      {/* Render Exerice and Exercise info */}
     </div>
   );
 }
