@@ -18,10 +18,13 @@
 }
 
 body {
-  background-image: linear-gradient(var(--litePink), var(--liteBlue), rgb(116, 119, 119),
-      var(--deepPurp));
+  background-image: linear-gradient(
+    var(--litePink),
+    var(--liteBlue),
+    rgb(116, 119, 119),
+    var(--deepPurp)
+  );
 }
-
 
 div#root {
   display: flex-box;
@@ -56,16 +59,15 @@ form {
 }
 
 button {
-
   display: flex-box;
 
   text-align: center;
+  color: var(--litePink);
   background-color: var(--deepBlue);
   color: #ffffff;
 
   border-radius: 30px;
   transition: background 0.5s;
-
 }
 
 button:active {
@@ -74,11 +76,11 @@ button:active {
 
 button:hover,
 btn:active {
-  background: var(--greenBlue);
+  color: var(--deepBlue);
+  background: var(--litePink);
 }
 
 container {
-
   max-width: 1000px;
   margin: auto;
   padding-left: 25px;
@@ -121,7 +123,6 @@ form .btn:focus {
   transition: transform 1s;
 }
 
-
 /* Media Query 912px & Under */
 
 @media only screen and (max-width: 912px) {
@@ -130,7 +131,6 @@ form .btn:focus {
     padding-right: 0px;
     margin-top: -60px;
   }
-
 
   .small-container-3 {
     max-width: 600px;
@@ -178,14 +178,13 @@ form .btn:focus {
     z-index: 1;
   }
 
-
   #relative-positioning {
     position: relative;
     top: 80px;
   }
 
   .mobile-break1 {
-    text-align:center;
+    text-align: center;
   }
 }
 
