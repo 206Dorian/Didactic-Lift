@@ -29,7 +29,7 @@
         width: 55vw;
     }
     .dropDownBtns button {
-        font-size: calc(10px + 2vw);
+        font-size: calc(8px + 1.5vw);
         height: 10vh;
         padding: 0 18px;
     }
@@ -40,10 +40,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 70vw;
+        width: 65vw;
     }
     .dropDownBtns button {
-        font-size: calc(2px + 1.5vw);
+        font-size: calc(5px + 1.5vw);
         height: 12vh;
         padding: 0 calc(50px - 1vw);
     }
