@@ -3,6 +3,7 @@ import MuscleGroups from "../components/MuscleGroups";
 import Exercise from "../components/Exercise";
 import UserInfo from "../components/UserInfo";
 
+import Logout from "../components/Logout";
 import Auth from "../utils/auth";
 
 export default function Profile() {
@@ -13,6 +14,8 @@ export default function Profile() {
         <br></br>
         <div>
         <UserInfo />
+        <br></br>
+        <Logout />
       </div>
 
       <div>
