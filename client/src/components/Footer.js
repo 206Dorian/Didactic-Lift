@@ -9,8 +9,7 @@ export default function Footer() {
           <div className="footer-title">
             <img src={myLogo} alt="didactic-lift logo" className="logo"></img>
           </div>
-          <p className="footer-tagline">🦾We hope this *Lifted* your spirits!<var id="flipped">🦾</var></p>
-          {/* using the var element tag prevents errors, certain tags like div cant (or shouldnt be) be nested in a p tag. */}
+          <p className="footer-tagline">🦾We hope this *Lifted* your spirits!<div id="flipped">🦾</div></p>
         </div>
         <div className="footer-section-wrapper">
           <div className="footer-section">
@@ -54,7 +53,7 @@ export default function Footer() {
           </div>
           <div className="footer-section">
             <h2 className="footer-category">🌎</h2>
-            <nav id="carbon" className="footer-list">
+            <nav className="footer-list">
               <li>
                 <a
                   href="https://climate.stripe.com/S2RQQU"

@@ -1,6 +1,5 @@
 import Login from './Login'
 import Signup from './Signup'
-import './Home.css'
 
 export default function Home(){
 
