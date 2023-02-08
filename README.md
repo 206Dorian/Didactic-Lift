@@ -37,6 +37,7 @@ Search by muscle groups to find new exercises to target those hard-to-reach area
 ## Deployed Site
 
 [Come check us out!](https://didactic-lift.herokuapp.com)
+https://didactic-lift.herokuapp.com/
 
 <br>
 
@@ -55,18 +56,18 @@ Search by muscle groups to find new exercises to target those hard-to-reach area
 
 ## Screenshots/ Demo
 
-<br>
-
-## Challenges
-
-<br>
-
-## Wins
 
 <br>
 
 ## Future Development
 
 - Option to search/ view yoga exercises
+-Find a DL workout buddy locally
+-Rate the gyms where you’ve workED out 
+-Rate workouts/ yoga poses you've tried
+-Track specifics (how well you slept the night before, what time of day you worked out to see your optimal workout times, stress and anxiety levels)
+-Input your body type, weight and what body type you are working towards
+-If you have an injury or muscle group you are trying to avoid
+-Dark mode 
 
 <br>
