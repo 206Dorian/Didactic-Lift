@@ -1,4 +1,5 @@
 # Didactic Lift
+
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ![express badge](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
@@ -10,13 +11,13 @@
 ![JWT badge](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)
 ![stripe badge](https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=Stripe&logoColor=white)
 
-
 ![linkedin badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 ![github badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
 <br>
 
 ## Description
+
 Welcome to Didactic Lift, a must-have app for the athletic and health-minded! Brought to you by Team Last Ditch Effort.
 
 Search by muscle groups to find new exercises to target those hard-to-reach areas, and save workout routines to your profile.
@@ -25,12 +26,12 @@ Search by muscle groups to find new exercises to target those hard-to-reach area
 
 ## Members of Team Last Ditch Effort
 
-| Member | Contact Links |
-|---|:---:|
-| Robert Arnold | [Github](https://github.com/YogiBruce) // [📧email](mailto:da.bruce.jr@gmail.com) // [LinkedIn](https://www.linkedin.com/in/robert-b-arnold-jr-8285b161/)
-| Timothy Barnaby | [Github](https://github.com/tbarns) // [📧email](mailto:tbarnaby1@gmail.com) // [LinkedIn](https://www.linkedin.com/in/tbarns/)
-| David Berry | [Github](https://github.com/dberry38) // [📧email](mailto:davidberry38@gmail.com) // [LinkedIn](https://www.linkedin.com/in/david-berry-122b5787/)
-| Dorian Birch | [Github](https://github.com/206Dorian) // [📧email](mailto:206dorian@gmail.com) // [LinkedIn](https://www.linkedin.com/in/dorian-douglas-birch-70695b4b/)
+| Member          |                                                                       Contact Links                                                                       |
+| --------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Robert Arnold   | [Github](https://github.com/YogiBruce) // [📧email](mailto:da.bruce.jr@gmail.com) // [LinkedIn](https://www.linkedin.com/in/robert-b-arnold-jr-8285b161/) |
+| Timothy Barnaby |              [Github](https://github.com/tbarns) // [📧email](mailto:tbarnaby1@gmail.com) // [LinkedIn](https://www.linkedin.com/in/tbarns/)              |
+| David Berry     |    [Github](https://github.com/dberry38) // [📧email](mailto:davidberry38@gmail.com) // [LinkedIn](https://www.linkedin.com/in/david-berry-122b5787/)     |
+| Dorian Birch    | [Github](https://github.com/206Dorian) // [📧email](mailto:206dorian@gmail.com) // [LinkedIn](https://www.linkedin.com/in/dorian-douglas-birch-70695b4b/) |
 
 <br>
 
@@ -54,20 +55,31 @@ https://didactic-lift.herokuapp.com/
 
 <br>
 
-## Screenshots/ Demo
+## Screenshots
 
-
-<br>
+<img src= "client/src/assets/readme1.png" width="70%" height="70%">
+<br></br>
+<img src= "client/src/assets/readme2.png" width="70%" height="70%">
+<br></br>
+<img src = "client/src/assets/readme3.png" width="70%" height="70%">
+<br></br>
 
 ## Future Development
 
 - Option to search/ view yoga exercises
--Find a DL workout buddy locally
--Rate the gyms where you’ve workED out 
--Rate workouts/ yoga poses you've tried
--Track specifics (how well you slept the night before, what time of day you worked out to see your optimal workout times, stress and anxiety levels)
--Input your body type, weight and what body type you are working towards
--If you have an injury or muscle group you are trying to avoid
--Dark mode 
+
+- Find a DL workout buddy locally
+    
+- Rate the gyms where you’ve worked out
+    
+- Rate workouts/ yoga poses you've tried
+    <br>
+- Track specifics (how well you slept the night before, what time of day you worked out to see your optimal workout times, stress and anxiety levels)
+    <br>
+- Input your body type, weight and what body type you are working towards
+    <br>
+- If you have an injury or muscle group you are trying to avoid
+    <br>
+- Dark mode
 
 <br>
