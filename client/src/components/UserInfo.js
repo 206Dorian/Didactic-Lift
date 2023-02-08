@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { UPDATE_USER, DELETE_USER } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
-import "./UserInfo.css";
 import Delete from "./Delete";
+import Logout from "./Logout";
+import "./UserInfo.css";
 
 
 export default function UserInfo(props) {
@@ -88,6 +89,8 @@ export default function UserInfo(props) {
             Update User
           </button>
           <Delete/>
+        <br></br>
+        <Logout />
           
       </form>
     </div>
