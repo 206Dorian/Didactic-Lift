@@ -18,7 +18,7 @@ export default function UserInfo(props) {
     try {
       await updateUser({ variables: { ...userData } });
 
-      window.location.reload();
+      window.location.assign('/');
     } catch (err) {
       console.error(err);
     }
@@ -45,19 +45,23 @@ export default function UserInfo(props) {
           Welcome<br></br>
           {Auth.getProfile().data.username}!{" "}
         </h2>
-        {[userAge, userHeight, userWeight] ? (
+        {userAge ? (
           <div>
             {" "}
 
             <h3 className="user-stats">
               {/* this pulls the data from the database */}
-              You're <p className="stat-fig">{userAge}</p>
+              Your age: <p className="stat-fig">{userAge}</p>
             </h3>
+
+
             <h3 className="user-stats">
-              You're <p className="stat-fig">{userHeight}</p>
+              Your height: <p className="stat-fig">{userHeight}</p>
             </h3>
+
+            
             <h3 className="user-stats">
-              You weigh <p className="stat-fig">{userWeight}</p>
+              Your weight: <p className="stat-fig">{userWeight}</p>
             </h3>
           </div>
         ) : (
@@ -92,7 +96,7 @@ export default function UserInfo(props) {
           />
         </div>
         <button onSubmit={handleUserUpdate} className="user-button">
-          Update User
+          Update My Stats
         </button>
         <Delete />
         <br></br>

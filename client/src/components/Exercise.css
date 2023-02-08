@@ -26,6 +26,11 @@
   justify-content: center;
 }
 
+/* .card-container:has(p):is("beginner"){
+  background-color: #ea7317;
+} */
+
+
 .exercise-name {
   font-size: calc(1rem + 2vw);
   font-style: italic;

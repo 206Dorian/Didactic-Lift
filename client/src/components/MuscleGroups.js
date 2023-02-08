@@ -1,10 +1,8 @@
-
 import { useState } from "react";
 import axios from "axios";
 import "./MuscleGroups.css";
 
-
-export default function Workout({onQuery}) {
+export default function Workout({ onQuery }) {
   const [muscleGroup, setMuscleGroup] = useState("");
   console.log(muscleGroup)
   // const handleChange = (event) => {
@@ -31,18 +29,18 @@ export default function Workout({onQuery}) {
     } catch (error) {
       console.error(error);
     }
-     
+
   };
   return (
     <>
-    <p id="muscle-section-title">Muscle Groups</p>
+      <p id="muscle-section-title">Muscle Groups</p>
       <div className="dropDownBtns">
         <button onClick={() => handleFormSubmit("abdominals")}
-        value="abdominals">Abdominals</button>
+          value="abdominals">Abdominals</button>
 
 
         <button onClick={() => handleFormSubmit("abductors")}
-        value="abductors">Abductors</button>
+          value="abductors">Abductors</button>
 
 
         <button onClick={() => handleFormSubmit("adductors")}>Adductors</button>
