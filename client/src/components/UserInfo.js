@@ -30,8 +30,9 @@ export default function UserInfo(props) {
     setUserData({ ...userData, [name]: value });
   };
 
-  console.log(Auth.getProfile().data);
 
+  console.log(Auth.getProfile().data);
+  
   let userAge = Auth.getProfile().data.age;
   let userWeight = Auth.getProfile().data.weight;
   let userHeight = Auth.getProfile().data.height;
@@ -47,6 +48,7 @@ export default function UserInfo(props) {
         {[userAge, userHeight, userWeight] ? (
           <div>
             {" "}
+
             <h3 className="user-stats">
               {/* this pulls the data from the database */}
               You're <p className="stat-fig">{userAge}</p>
