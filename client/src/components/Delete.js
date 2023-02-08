@@ -7,15 +7,15 @@ const Delete = () => {
   const deleteUser = useMutation(DELETE_USER)
   const handleUserDelete = async (event) => {
     event.preventDefault();
-    const token = Auth.loggedIn() ? Auth.getToken() : null
+
     try {
-      await deleteUser(token)
-      console.log(token)
+      await deleteUser(Auth.getProfile().username)
+      console.log('delete')
     }
     catch (err) {
       console.error(err)
     }
-    console.log(token)
+
   }
 
   return (

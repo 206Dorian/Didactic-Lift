@@ -39,9 +39,9 @@ export default function UserInfo(props) {
   };
 
   // this is not quire working at this point
-  let userAge = Auth.getProfile(userData.age);
-  let userWeight = Auth.getProfile(userData.weight);
-  let userHeight = Auth.getProfile(userData.height);
+  let userAge = Auth.getProfile().data.age;
+  let userWeight = Auth.getProfile().data.weight;
+  let userHeight = Auth.getProfile().data.height;
 
   return (
     <div className="user-container">
@@ -57,20 +57,21 @@ export default function UserInfo(props) {
           <div> <h3 className="user-age">
             {" "}
             {/* this pulls the data from the database */}
-            You're {Auth.getProfile().data.age}
+            You're 
+            {userAge}
           
           </h3>
             <h3 className="user-height">
               {" "}
               You're
               {/* this pulls the data from the database */}
-              {Auth.getProfile().data.height}
+              {userHeight}
             
             </h3>
             <h3 className="user-weight">
               {" "}
               You weigh
-              {/* this pulls the data from the database */}{Auth.getProfile().data.weight}
+              {/* this pulls the data from the database */}{userWeight}
               
             </h3>
           </div>
