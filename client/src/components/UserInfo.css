@@ -9,63 +9,68 @@
     --pumpkin: #ea7317;
     --verdigris: #73bfb8;
   }
-
-.user-container {
-  display: flex;
-  flex-direction: column;
-  color: var(--litePink);
-  width: 90vw;
-}
-
-.halfsies {
-  display: flex;
-  flex-direction: column;
-}
-
-.user-welcome {
-  font-size: 5vw;
-  position: relative;
-  bottom: 3.5rem;
-}
-
-.user-age {
-  font-size: 3vw;
-  position: relative;
-  bottom: calc(4rem - 1.5vw);
-}
-
-.input-container {
+  
+  .user-container {
+    display: flex;
+    flex-direction: column;
+    color: var(--litePink);
+    width: 90vw;
+  }
+  
+  .halfsies {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-welcome {
+    font-size: 5vw;
+    position: relative;
+    bottom: 3.5rem;
+  }
+  
+  .user-stats {
+    font-size: 3vw;
+    position: relative;
+    bottom: calc(4rem - 1.5vw);
+  }
+  
+  .stat-fig {
+      display: inline;
+      color: var(--mikado);
+  }
+  
+  .input-container {
     width: 40vw;
     max-width: 570px;
     margin: 0 auto;
-}
-
-.input-label {
-  position: relative;
-  bottom: 3.5rem;
-  color: var(--deepBlue);
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 3.5rem;
-  align-items: left;
-}
-
-.input {
-  font-size: 3vw;
-  text-align: center;
-  position: relative;
-  bottom: calc(4.5rem - 1vw);
-  max-width: 570px;
-}
-
-.ice-breaker {
-  font-size: 2.5vw;
-  color: var(--mikado);
-  position: relative;
-  bottom: calc(4rem - 2vw);
-}
-
-.user-button {
+  }
+  
+  .input-label {
+    position: relative;
+    bottom: 3.5rem;
+    color: var(--deepBlue);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    align-items: left;
+  }
+  
+  .input {
+    font-size: 3vw;
+    text-align: center;
+    position: relative;
+    bottom: calc(4.5rem - 1vw);
+    max-width: 570px;
+  }
+  
+  .ice-breaker {
+    font-size: 2.5vw;
+    color: var(--mikado);
+    position: relative;
+    bottom: calc(4rem - 2vw);
+  }
+  
+  .user-button {
     margin: 0.5rem auto;
     width: 30vw;
     position: relative;
@@ -73,14 +78,14 @@
     font-size: calc(0.9rem + 0.75vw);
     color: var(--deepBlue);
     background-color: var(--litePink);
-}
-
-.user-button:hover {
+  }
+  
+  .user-button:hover {
     color: var(--litePink);
     background-color: var(--greenBlue);
-}
-
-#delete-btn:hover {
+  }
+  
+  #delete-btn:hover {
     background-color: rgb(190, 0, 0);
-}
-
+  }
+  
