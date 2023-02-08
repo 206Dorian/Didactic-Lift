@@ -6,12 +6,7 @@ import Delete from "./Delete";
 import Logout from "./Logout";
 import "./UserInfo.css";
 
-
 export default function UserInfo(props) {
-
-
-
-
   const [userData, setUserData] = useState({ age: "", height: "", weight: "" });
   const [updateUser] = useMutation(UPDATE_USER);
 
@@ -23,7 +18,7 @@ export default function UserInfo(props) {
     try {
       await updateUser({ variables: { ...userData } });
 
-      window.location.reload()
+      window.location.reload();
     } catch (err) {
       console.error(err);
     }
@@ -32,16 +27,14 @@ export default function UserInfo(props) {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    // if (name === "age") {
     setUserData({ ...userData, [name]: value });
-    // }
-    console.log(Auth.getProfile().data);
   };
 
-  // this is not quire working at this point
-  let userAge = Auth.getProfile(userData.age);
-  let userWeight = Auth.getProfile(userData.weight);
-  let userHeight = Auth.getProfile(userData.height);
+  console.log(Auth.getProfile().data);
+
+  let userAge = Auth.getProfile().data.age;
+  let userWeight = Auth.getProfile().data.weight;
+  let userHeight = Auth.getProfile().data.height;
 
   return (
     <div className="user-container">
@@ -49,29 +42,20 @@ export default function UserInfo(props) {
         <h2 className="user-welcome">
           {" "}
           Welcome<br></br>
-          {Auth.getProfile().data.username}!
-
-          {" "}
+          {Auth.getProfile().data.username}!{" "}
         </h2>
         {[userAge, userHeight, userWeight] ? (
-          <div> <h3 className="user-age">
+          <div>
             {" "}
-            {/* this pulls the data from the database */}
-            You're {Auth.getProfile().data.age}
-          
-          </h3>
-            <h3 className="user-height">
-              {" "}
-              You're
+            <h3 className="user-stats">
               {/* this pulls the data from the database */}
-              {Auth.getProfile().data.height}
-            
+              You're <p className="stat-fig">{userAge}</p>
             </h3>
-            <h3 className="user-weight">
-              {" "}
-              You weigh
-              {/* this pulls the data from the database */}{Auth.getProfile().data.weight}
-              
+            <h3 className="user-stats">
+              You're <p className="stat-fig">{userHeight}</p>
+            </h3>
+            <h3 className="user-stats">
+              You weigh <p className="stat-fig">{userWeight}</p>
             </h3>
           </div>
         ) : (
@@ -104,11 +88,11 @@ export default function UserInfo(props) {
             onChange={handleChange}
             placeholder="How much do you weigh?"
           />
-          </div>
-          <button onSubmit={handleUserUpdate} className="user-button">
-            Update User
-          </button>
-          <Delete/>
+        </div>
+        <button onSubmit={handleUserUpdate} className="user-button">
+          Update User
+        </button>
+        <Delete />
         <br></br>
         <Logout />
       </form>
