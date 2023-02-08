@@ -1,0 +1,27 @@
+:root {
+    --chiliRed: #d64933;
+    --deepBlue: #003c53;
+    --deepPurp: #242038;
+    --greenBlue: #2364aa;
+    --liteBlue: #3da5d9;
+    --litePink: #eee5e9;
+    --mikado: #fec601;
+    --pumpkin: #ea7317;
+    --verdigris: #73bfb8;
+  }
+
+.logout-btn {
+    margin: 0.5rem auto;
+    width: 30vw;
+    position: relative;
+    bottom: 1rem;
+    font-size: calc(0.9rem + 0.75vw);
+    color: var(--deepBlue);
+    background-color: var(--litePink);
+    transition: 0.5s;
+}
+
+.logout-btn:hover {
+    color: var(--mikado);
+    background-color: var(--deepBlue);
+}
