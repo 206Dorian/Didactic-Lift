@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { UPDATE_USER, DELETE_USER } from "../utils/mutations";
+import { UPDATE_USER } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
 import Delete from "./Delete";
@@ -8,12 +8,12 @@ import "./UserInfo.css";
 
 
 export default function UserInfo(props) {
-  const [updateFormState, setUpdateFormState] = useState([]);
 
-  const deleteUser = useMutation(DELETE_USER);
+
+
 
   const [userData, setUserData] = useState({ age: "", height: "", weight: "" });
-  const [updateUser, { error }] = useMutation(UPDATE_USER);
+  const [updateUser] = useMutation(UPDATE_USER);
 
   const handleUserUpdate = async (event) => {
     event.preventDefault();
@@ -39,27 +39,47 @@ export default function UserInfo(props) {
   };
 
   // this is not quire working at this point
-  let userAge = userData.age;
+  let userAge = Auth.getProfile(userData.age);
+  let userWeight = Auth.getProfile(userData.weight);
+  let userHeight = Auth.getProfile(userData.height);
 
   return (
     <div className="user-container">
       <form onSubmit={handleUserUpdate}>
-          <h2 className="user-welcome">
+        <h2 className="user-welcome">
+          {" "}
+          Welcome<br></br>
+          {Auth.getProfile().data.username}!
+
+          {" "}
+        </h2>
+        {[userAge, userHeight, userWeight] ? (
+          <div> <h3 className="user-age">
             {" "}
-            Welcome<br></br>
-            {Auth.getProfile().data.username}!{" "}
-          </h2>
-          {userAge ? (
-            <h3 className="user-age">
+            {/* this pulls the data from the database */}
+            You're {Auth.getProfile().data.age}
+          
+          </h3>
+            <h3 className="user-height">
               {" "}
-              You're {userData.age} years old?!
+              You're
+              {/* this pulls the data from the database */}
+              {Auth.getProfile().data.height}
+            
             </h3>
-          ) : (
-            <h3 className="ice-breaker">
-              We should get to know each other better:
+            <h3 className="user-weight">
+              {" "}
+              You weigh
+              {/* this pulls the data from the database */}{Auth.getProfile().data.weight}
+              
             </h3>
-          )}
-          <div className="input-container">
+          </div>
+        ) : (
+          <h3 className="ice-breaker">
+            We should get to know each other better:
+          </h3>
+        )}
+        <div className="input-container">
           <label className="input-label">Age: </label>
           <input
             className="input"
@@ -91,7 +111,6 @@ export default function UserInfo(props) {
           <Delete/>
         <br></br>
         <Logout />
-          
       </form>
     </div>
   );
