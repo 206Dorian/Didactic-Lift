@@ -1,3 +1,20 @@
+:root {
+    --chiliRed: #d64933;
+    --deepBlue: #003c53;
+    --deepPurp: #242038;
+    --greenBlue: #2364aa;
+    --liteBlue: #3da5d9;
+    --litePink: #eee5e9;
+    --mikado: #fec601;
+    --pumpkin: #ea7317;
+    --verdigris: #73bfb8;
+  }
+
+#muscle-section-title {
+    color: var(--litePink);
+    font-size: 6vw;
+}
+
 .dropDownBtns {
     display: flex;
     flex-direction: column;
@@ -15,13 +32,22 @@
     font-size: 5vw;
     height: 12vh;
     margin: 5px;
+    color: var(--deepPurp);
+    background-color: var(--verdigris);
+}
+
+.dropDownBtns button:hover,
+btn:active {
+    color: var(--liteBlue);
+    background-color: var(--deepPurp);
 }
 
 
 
-
-
 @media only screen and (min-width: 640px) {
+    #muscle-section-title {
+        font-size: calc(32px + 2vw);
+    }
     .dropDownBtns {
         flex-direction: row;
         flex-wrap: wrap;

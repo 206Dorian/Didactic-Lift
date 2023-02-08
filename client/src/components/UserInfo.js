@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { UPDATE_USER } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
-import "./UserInfo.css";
 import Delete from "./Delete";
+import Logout from "../components/Logout";
+import "./UserInfo.css";
 
 
 export default function UserInfo(props) {
@@ -103,12 +104,13 @@ export default function UserInfo(props) {
             onChange={handleChange}
             placeholder="How much do you weigh?"
           />
-        </div>
-        <button onSubmit={handleUserUpdate} className="user-button">
-          Update User
-        </button>
-        <Delete />
-
+          </div>
+          <button onSubmit={handleUserUpdate} className="user-button">
+            Update User
+          </button>
+          <Delete/>
+        <br></br>
+        <Logout />
       </form>
     </div>
   );
