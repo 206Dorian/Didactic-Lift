@@ -53,9 +53,14 @@
 .exercise-equipment {
 }
 
+#instructions-section-title {
+    color: var(--mikado);
+    margin-bottom: 1rem;
+}
+
 .exercise-instructions {
   font-size: calc(0.69rem + 1vw);
-  line-height: 1.38;
+  line-height: 1.5;
 
   padding: 1rem;
   height: 15rem;

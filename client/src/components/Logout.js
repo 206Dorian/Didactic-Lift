@@ -1,6 +1,6 @@
 import React from 'react'
 import Auth from '../utils/auth';
-import './Logout.css'
+import './Logout.css';
 
 const Logout = () => {
     const logout = (event) => {

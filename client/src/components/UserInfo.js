@@ -3,7 +3,7 @@ import { UPDATE_USER } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
 import Delete from "./Delete";
-import Logout from "../components/Logout";
+import Logout from "./Logout";
 import "./UserInfo.css";
 
 

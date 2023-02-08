@@ -12,6 +12,7 @@ export default function Exercise() {
           <p className="exercise-difficulty">Difficulty: (intermediate)</p>
           <p className="exercise-equipment">Equipment: (kettlebells)</p>
         </div>
+        <div id="instructions-section-title">Instructions</div>
         <div className="exercise-instructions">
           Starting position, hold your body at arm's length with your arms
           nearly locked above the bars. Now, inhale and slowly lower yourself
