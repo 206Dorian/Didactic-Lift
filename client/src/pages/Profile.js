@@ -34,7 +34,7 @@ export default function Profile() {
     ) : (
       <p>
           You need to be logged in to view exercises. Please{' '}
-          <Link to="/home">login</Link>
+          <Link to="/">login</Link>
         </p>
 
 

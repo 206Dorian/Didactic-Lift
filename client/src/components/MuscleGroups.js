@@ -1,4 +1,4 @@
-import { useQuery } from "@apollo/client";
+
 import { useState } from "react";
 import axios from "axios";
 import "./MuscleGroups.css";
@@ -6,6 +6,7 @@ import "./MuscleGroups.css";
 
 export default function Workout({onQuery}) {
   const [muscleGroup, setMuscleGroup] = useState("");
+  console.log(muscleGroup)
   // const handleChange = (event) => {
   //   setMuscleGroup(event.target.value);
   // };
