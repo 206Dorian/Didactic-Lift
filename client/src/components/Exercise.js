@@ -15,6 +15,7 @@ export default function Exercise(props) {
           <p className="exercise-equipment">Equipment: {query.equipment}</p>
           <p className="muscle">Muscle Group: {query.muscle}</p>
         </div>
+        <div id="instructions-section-title">Instructions</div>
         <div className="exercise-instructions">
         {query.instructions}
         </div>
