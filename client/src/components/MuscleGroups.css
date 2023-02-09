@@ -8,7 +8,7 @@
     --mikado: #fec601;
     --pumpkin: #ea7317;
     --verdigris: #73bfb8;
-  }
+}
 
 #muscle-section-title {
     color: var(--litePink);
@@ -48,12 +48,14 @@ btn:active {
     #muscle-section-title {
         font-size: calc(32px + 2vw);
     }
+
     .dropDownBtns {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         width: 55vw;
     }
+
     .dropDownBtns button {
         font-size: calc(8px + 1.5vw);
         height: 10vh;
@@ -68,6 +70,7 @@ btn:active {
         justify-content: space-around;
         width: 65vw;
     }
+
     .dropDownBtns button {
         font-size: calc(5px + 1.5vw);
         height: 12vh;

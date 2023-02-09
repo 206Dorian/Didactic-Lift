@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useMutation } from "@apollo/client";
-import { Link } from "react-router-dom";
 import { LOGIN } from "../utils/mutations";
 import Auth from "../utils/auth";
 import './Login.css'
@@ -33,40 +32,40 @@ export default function Login(props) {
 
   return (
     <>
-    <div className="container my-1">
-      <form autocomplete="off" className="form-title" onSubmit={handleFormSubmit}>Login
-        <div className="flex-row space-between my-2">
-          <label htmlFor="username">Username:</label>
-          <input className="input-field"
-            placeholder="Enter Username"
-            name="username"
-            type="username"
-            id="username"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
-          <input className="input-field"
-            placeholder="******"
-            name="password"
-            type="password"
-            id="pwd"
-            onChange={handleChange}
-          />
-        </div>
-        {error ? (
-          <div>
-            {/* <p className="error-text">The provided credentials are incorrect</p> */}
+      <div className="container my-1">
+        <form autocomplete="off" className="form-title" onSubmit={handleFormSubmit}>Login
+          <div className="flex-row space-between my-2">
+            <label htmlFor="username">Username:</label>
+            <input className="input-field"
+              placeholder="Enter Username"
+              name="username"
+              type="username"
+              id="username"
+              onChange={handleChange}
+            />
           </div>
-        ) : null}
-        <div id="btn-container" className="flex-row flex-end">
-          <button id="login-btn" type="submit">Log in</button>
-        </div>
-      </form>
-    </div>
+          <div className="flex-row space-between my-2">
+            <label htmlFor="pwd">Password:</label>
+            <input className="input-field"
+              placeholder="******"
+              name="password"
+              type="password"
+              id="pwd"
+              onChange={handleChange}
+            />
+          </div>
+          {error ? (
+            <div>
+              {/* <p className="error-text">The provided credentials are incorrect</p> */}
+            </div>
+          ) : null}
+          <div id="btn-container" className="flex-row flex-end">
+            <button id="login-btn" type="submit">Log in</button>
+          </div>
+        </form>
+      </div>
     </>
-    
+
   );
 }
 

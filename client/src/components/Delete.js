@@ -18,7 +18,7 @@ const Delete = () => {
         variables: token.username
 
       })
-
+      console.log(data)
     }
     catch (err) {
       console.error(error)
