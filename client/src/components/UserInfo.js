@@ -30,7 +30,7 @@ export default function UserInfo(props) {
     setUserData({ ...userData, [name]: value });
   };
 
-  
+
   let userAge = Auth.getProfile().data.age;
   let userWeight = Auth.getProfile().data.weight;
   let userHeight = Auth.getProfile().data.height;
@@ -57,7 +57,7 @@ export default function UserInfo(props) {
               Your height: <p className="stat-fig">{userHeight}</p>
             </h3>
 
-            
+
             <h3 className="user-stats">
               Your weight: <p className="stat-fig">{userWeight}</p>
             </h3>

@@ -4,7 +4,7 @@ import "./MuscleGroups.css";
 
 export default function Workout({ onQuery }) {
   const [muscleGroup, setMuscleGroup] = useState("");
-
+  console.log(muscleGroup)
   const handleFormSubmit = async (muscleGroup) => {
     setMuscleGroup(muscleGroup);
     const options = {
@@ -17,8 +17,8 @@ export default function Workout({ onQuery }) {
         options
       );
       const { data } = await response;
-        
-      formatValueText({onQuery}, data);
+
+      formatValueText({ onQuery }, data);
     } catch (error) {
       console.error(error);
     }
@@ -83,8 +83,8 @@ export default function Workout({ onQuery }) {
 
 
 // this function is used to clean up the values in the exercise objects
-const formatValueText = ({onQuery}, data) => {
-  for (var i=0; i < 10; i++) {
+const formatValueText = ({ onQuery }, data) => {
+  for (var i = 0; i < 10; i++) {
     var rawType = data[i].type;
     var editType = rawType.replace(/_/g, ' ');
     data[i].type = editType;
@@ -92,7 +92,7 @@ const formatValueText = ({onQuery}, data) => {
     var rawMuscle = data[i].muscle;
     var editMuscle = rawMuscle.replace(/_/g, ' ');
     data[i].muscle = editMuscle;
-    
+
     var rawEquipment = data[i].equipment;
     var editEquipment = rawEquipment.replace(/_/g, ' ');
     data[i].equipment = editEquipment;

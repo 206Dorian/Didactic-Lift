@@ -8,7 +8,7 @@
     --mikado: #fec601;
     --pumpkin: #ea7317;
     --verdigris: #73bfb8;
-  }
+}
 
 .container {
     display: flex;
@@ -67,4 +67,3 @@
     height: calc(0.38rem + 2.5vw);
     font-size: 2vw;
 }
-

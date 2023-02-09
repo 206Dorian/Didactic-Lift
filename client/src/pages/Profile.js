@@ -16,8 +16,6 @@ export default function Profile() {
           <div>
             <UserInfo />
           </div>
-
-
           <div>
             {/* FIRST Render MuscleGroups component with buttons by default */}
             <MuscleGroups onQuery={setQuery} />
