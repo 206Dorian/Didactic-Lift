@@ -12,7 +12,6 @@ export default function Workout({onQuery}) {
   const handleFormSubmit = async (muscleGroup) => {
     // event.preventDefault()
     setMuscleGroup(muscleGroup);
-    console.log(muscleGroup);
     // const [updated, setUpdated] = useState(muscleGroup);
     const options = {
       headers: { "X-Api-Key": "akpoUwvyp6/ajUQ13OXQDQ==QRzmUJALDEJyYMlq" },
@@ -25,8 +24,8 @@ export default function Workout({onQuery}) {
         options
       );
       const { data } = await response;
-      console.log("response", data);
-      onQuery(data)
+        
+      formatValueText({onQuery}, data);
     } catch (error) {
       console.error(error);
     }
@@ -88,3 +87,18 @@ export default function Workout({onQuery}) {
     </>
   );
 }
+
+
+// this function is used to clean up the values in the exercise objects
+const formatValueText = ({onQuery}, data) => {
+  for (var i=0; i < 10; i++) {
+    var rawMuscle = data[i].muscle;
+    var editMuscle = rawMuscle.replace(/_/g, ' ');
+    data[i].muscle = editMuscle;
+    
+    var rawEquipment = data[i].equipment;
+    var editEquipment = rawEquipment.replace(/_/g, ' ');
+    data[i].equipment = editEquipment;
+  }
+  onQuery(data);
+};
