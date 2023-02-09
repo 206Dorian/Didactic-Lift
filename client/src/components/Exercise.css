@@ -72,8 +72,8 @@
 
 #back-btn {
     margin: 2rem 0;
-  height: 2rem;
-  width: calc(4rem + 5vw);
+  height: 2.5rem;
+  width: calc(9rem + 7vw);
   font-size: calc(0.5rem + 1vw);
   color: var(--verdigris);
   background-color: var(--deepPurp);
@@ -95,5 +95,8 @@
   .exercise-instructions {
     width: calc(15rem + 20vw);
     font-size: calc(0.69rem + 0.5vw);
+  }
+  #back-btn {
+  width: calc(11rem + 7vw);
   }
 }
