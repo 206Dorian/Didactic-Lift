@@ -55,6 +55,7 @@
 #instructions-section-title {
     color: var(--mikado);
     margin-bottom: 1rem;
+    font-size: calc(1.5rem + 2vw);
 }
 
 .exercise-instructions {
