@@ -4,18 +4,12 @@ import "./MuscleGroups.css";
 
 export default function Workout({ onQuery }) {
   const [muscleGroup, setMuscleGroup] = useState("");
-  console.log(muscleGroup)
-  // const handleChange = (event) => {
-  //   setMuscleGroup(event.target.value);
-  // };
+
   const handleFormSubmit = async (muscleGroup) => {
-    // event.preventDefault()
     setMuscleGroup(muscleGroup);
-    // const [updated, setUpdated] = useState(muscleGroup);
     const options = {
       headers: { "X-Api-Key": "akpoUwvyp6/ajUQ13OXQDQ==QRzmUJALDEJyYMlq" },
     };
-
 
     try {
       const response = await axios.get(
@@ -91,6 +85,10 @@ export default function Workout({ onQuery }) {
 // this function is used to clean up the values in the exercise objects
 const formatValueText = ({onQuery}, data) => {
   for (var i=0; i < 10; i++) {
+    var rawType = data[i].type;
+    var editType = rawType.replace(/_/g, ' ');
+    data[i].type = editType;
+
     var rawMuscle = data[i].muscle;
     var editMuscle = rawMuscle.replace(/_/g, ' ');
     data[i].muscle = editMuscle;
