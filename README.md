@@ -55,6 +55,25 @@ https://didactic-lift.herokuapp.com/
 
 <br>
 
+## Usage
+    -The user can easily login or create a new profile. Once they’re logged in, they will be able to update their personal info. 
+    -From the profile page, the user can then select a muscle-group and they’re instantly provided 10 different exercises.
+    -They’re also provided with everything they need to know to complete each exercise including difficulty, needed equipment, and even helpful instructions!  
+
+<br>
+
+## Development 
+
+Easy to use login / signup page:
+<br>
+<img src= "client/src/assets/login-wireframe.jpg" width="50%" height="50%">
+<br></br>
+Profile page displaying user data and buttons. Selecting buttons to render list of exercises.
+<br>
+<img src= "client/src/assets/profile-wireframe.jpg" width="50%" height="50%">
+
+<br>
+
 ## Screenshots
 
 <img src= "client/src/assets/readme1.png" width="70%" height="70%">
