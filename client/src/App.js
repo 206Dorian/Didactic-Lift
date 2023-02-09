@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Profile from "./pages/Profile";
 
 import Home from "./pages/Home";
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   ApolloClient,
@@ -40,8 +40,6 @@ const client = new ApolloClient({
 });
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("");
-  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   return (
     <ApolloProvider client={client}>
       <Router>
