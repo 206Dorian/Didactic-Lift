@@ -2,7 +2,6 @@ import "./Exercise.css";
 
 
 export default function Exercise(props) {
-    console.log(props)
   return (
     <div>
     {Array.from(props.query).map((query) => (
@@ -10,10 +9,10 @@ export default function Exercise(props) {
       <form className="card-container">
         <p className="exercise-name">{query.name}</p>
         <div className="card-info">
-          <p className="exercise-type">Type: {query.type}</p>
-          <p className="exercise-difficulty">Difficulty: {query.difficulty}</p>
-          <p className="exercise-equipment">Equipment: {query.equipment}</p>
-          <p className="muscle">Muscle Group: {query.muscle}</p>
+          <p>Type: {query.type}</p>
+          <p>Difficulty: {query.difficulty}</p>
+          <p>Equipment: {query.equipment}</p>
+          <p>Muscle Group: {query.muscle}</p>
         </div>
         <div id="instructions-section-title">Instructions</div>
         <div className="exercise-instructions">
