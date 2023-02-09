@@ -30,8 +30,6 @@ export default function UserInfo(props) {
     setUserData({ ...userData, [name]: value });
   };
 
-
-  console.log(Auth.getProfile().data);
   
   let userAge = Auth.getProfile().data.age;
   let userWeight = Auth.getProfile().data.weight;
