@@ -41,56 +41,56 @@ export default function Signup(props) {
 
     return (
         <>
-        <div className="container my-1">
-            <form className="form-title" onSubmit={handleFormSubmit}>Signup
-                <div className="flex-row space-between my-2">
-                    <label htmlFor="username">Username:</label>
-                    <input className="input-field"
-                        value={formState.username}
-                        placeholder="Enter Username"
-                        name="username"
-                        type="username"
-                        id="signupUsername"
-                        onChange={handleChange}
-                    />
-                </div>
-
-
-                <div className="flex-row space-between my-2">
-                    <label htmlFor="email">Email:</label>
-                    <input className="input-field"
-                        value={formState.email}
-                        placeholder="your.email@test.com"
-                        name="email"
-                        type="email"
-                        id="email"
-                        onChange={handleChange}
-                    />
-                </div>
-
-                <div className="flex-row space-between my-2">
-                    <label htmlFor="password">Password:</label>
-                    <input className="input-field"
-                        value={formState.password}
-                        placeholder="******"
-                        name="password"
-                        type="password"
-                        id="signupPwd"
-                        onChange={handleChange}
-                    />
-                </div>
-                {error ? (
-                    <div>
-                        {/* <p className="error-text">The provided credentials are incorrect</p> */}
+            <div className="container my-1">
+                <form className="form-title" onSubmit={handleFormSubmit}>Signup
+                    <div className="flex-row space-between my-2">
+                        <label htmlFor="username">Username:</label>
+                        <input className="input-field"
+                            value={formState.username}
+                            placeholder="Enter Username"
+                            name="username"
+                            type="username"
+                            id="signupUsername"
+                            onChange={handleChange}
+                        />
                     </div>
-                ) : null}
-                <div id="btn-container" className="flex-row flex-end">
-                    <button id="signup-btn" type="submit">Sign up!</button>
-                </div>
-            </form>
-        </div>
+
+
+                    <div className="flex-row space-between my-2">
+                        <label htmlFor="email">Email:</label>
+                        <input className="input-field"
+                            value={formState.email}
+                            placeholder="your.email@test.com"
+                            name="email"
+                            type="email"
+                            id="email"
+                            onChange={handleChange}
+                        />
+                    </div>
+
+                    <div className="flex-row space-between my-2">
+                        <label htmlFor="password">Password:</label>
+                        <input className="input-field"
+                            value={formState.password}
+                            placeholder="******"
+                            name="password"
+                            type="password"
+                            id="signupPwd"
+                            onChange={handleChange}
+                        />
+                    </div>
+                    {error ? (
+                        <div>
+                            {/* <p className="error-text">The provided credentials are incorrect</p> */}
+                        </div>
+                    ) : null}
+                    <div id="btn-container" className="flex-row flex-end">
+                        <button id="signup-btn" type="submit">Sign up!</button>
+                    </div>
+                </form>
+            </div>
         </>
-        
+
     );
 }
 

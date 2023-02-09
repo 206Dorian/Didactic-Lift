@@ -18,12 +18,10 @@
 }
 
 body {
-  background-image: linear-gradient(
-    var(--litePink),
-    var(--liteBlue),
-    rgb(116, 119, 119),
-    var(--deepPurp)
-  );
+  background-image: linear-gradient(var(--litePink),
+      var(--liteBlue),
+      rgb(116, 119, 119),
+      var(--deepPurp));
 }
 
 div#root {

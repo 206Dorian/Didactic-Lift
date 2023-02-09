@@ -1,4 +1,4 @@
-const { Exercise, User} = require('../models');
+const { Exercise, User } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
 
@@ -51,19 +51,19 @@ const resolvers = {
       return { token, user };
     },
     updateUser: async (parent, { height, weight, age }, context) => {
-      if(context.user) {
+      if (context.user) {
         const user = await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $set: { age: age, height:height, weight:weight }},
+          { $set: { age: age, height: height, weight: weight } },
           { new: true })
-      return user;
+        return user;
       }
     },
 
     deleteUser: async (parent, username) => {
       const user = await User.findOneAndDelete(username);
       return (`We will miss you ${user}`);
-      
+
     },
   }
 };
