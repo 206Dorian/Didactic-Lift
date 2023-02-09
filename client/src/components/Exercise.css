@@ -39,19 +39,13 @@
 
 .card-info {
   font-size: calc(0.75rem + 2vw);
+  font-weight: 500;
   color: var(--litePink);
   position: relative;
   bottom: calc(3.5rem + 1vw);
+  text-transform: capitalize;
 }
 
-.exercise-type {
-}
-
-.exercise-difficulty {
-}
-
-.exercise-equipment {
-}
 
 #instructions-section-title {
     color: var(--mikado);
