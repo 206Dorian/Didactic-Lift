@@ -1,6 +1,5 @@
 import "./Exercise.css";
 
-
 export default function Exercise(props) {
   return (
     <div>
@@ -24,5 +23,5 @@ export default function Exercise(props) {
     ))}
     </div>
 
-  );
+    );
 }
