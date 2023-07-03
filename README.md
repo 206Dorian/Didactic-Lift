@@ -28,10 +28,10 @@ Search by muscle groups to find new exercises to target those hard-to-reach area
 
 | Member          |                                                                       Contact Links                                                                       |
 | --------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Robert Arnold   | [Github](https://github.com/YogiBruce) // [📧email](mailto:da.bruce.jr@gmail.com) // [LinkedIn](https://www.linkedin.com/in/robert-b-arnold-jr-8285b161/) |
 | Timothy Barnaby |              [Github](https://github.com/tbarns) // [📧email](mailto:tbarnaby1@gmail.com) // [LinkedIn](https://www.linkedin.com/in/tbarns/)              |
-| David Berry     |    [Github](https://github.com/dberry38) // [📧email](mailto:davidberry38@gmail.com) // [LinkedIn](https://www.linkedin.com/in/david-berry-122b5787/)     |
 | Dorian Birch    | [Github](https://github.com/206Dorian) // [📧email](mailto:206dorian@gmail.com) // [LinkedIn](https://www.linkedin.com/in/dorian-douglas-birch-70695b4b/) |
+| David Berry     |    [Github](https://github.com/dberry38) // [📧email](mailto:davidberry38@gmail.com) // [LinkedIn](https://www.linkedin.com/in/david-berry-122b5787/)     |
+| Robert Arnold   | [Github](https://github.com/YogiBruce) // [📧email](mailto:da.bruce.jr@gmail.com) // [LinkedIn](https://www.linkedin.com/in/robert-b-arnold-jr-8285b161/) |
 
 <br>
 
